@@ -9,8 +9,10 @@ section.main{
 }
 
 h1, h2{
-  font-family: Helvetica, sans-serif;
+  font-family: Georgia, serif;
   margin:0px;
+  font-weight: normal;
+
 }
 
 h1{
