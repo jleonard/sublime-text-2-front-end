@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<dl>
+  <dt>${1:item one}</dt>
+    <dd>${2:description}</dd>
+  <dt>${3:item two}</dt>
+    <dd>${4:description}</dd>
+</dl>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_dl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
