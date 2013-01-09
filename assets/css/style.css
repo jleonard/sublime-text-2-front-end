@@ -1,8 +1,14 @@
+body{
+  padding:0px;
+  margin:0px;
+}
+
 section.main{
   background-color:#222;
   padding:20px;
 }
 
 h1, h2{
+  font-family: Helvetica sans-serif;
   color: #e6e6e6;
 }
