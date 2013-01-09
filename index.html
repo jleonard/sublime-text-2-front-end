@@ -11,16 +11,55 @@
 
     <link rel="canonical" href="CANONICAL_URL">
     <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <link href="/assets/js/libs/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
 
     </head>
-    <body>
+    <body onload="prettyPrint()">
       <div id="main" class="grid">
-        <h1>Sublime Text 2 : Front End snippets</h1>
+        <section>
+          <h1>Sublime Text 2<br/>front end snippets</h1>
+          <h2>Code snippets for common js, css and html tasks</h2>
+        </section>
+
+        <table>
+          <thead>
+            <tr>
+              <th>snippet</th>
+              <th>tab trigger</th>
+              <th>result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="3">.js snippets</td>
+              <td colspan="3">jQuery snippets</td>
+              <td>jQuery function</td>
+              <td>_$fn</td>
+              <td>
+                <pre>
+                  <code class="prettyprint lang-js">
+$(function() {
+  /* code ... */
+});
+                  </code>
+                </pre>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+
       </div>
       <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script type="text/javascript" src="/assets/js/libs/google-code-prettify/prettify.js"></script>
       <script>
-          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          var _gaq=[['_setAccount','UA-37507961-1'],['_trackPageview']];
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
           g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
           s.parentNode.insertBefore(g,s)}(document,'script'));
