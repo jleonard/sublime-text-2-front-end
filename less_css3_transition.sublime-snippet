@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+#css3 > .transition(${1:0px},${2:1px},${3:0px},${4:0px},${5:#222});
+.transition( ${1:all}, ${2:0.5s}, ${3:linear}, $4{:0s}; )
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>.
+    .transition</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>

@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+
+<!-- Twitter Bootstrap Modal http://twitter.github.com/bootstrap/javascript.html#modals -->
+<!-- Button to trigger modal -->
+<a href="#${1:myModal}" role="button" class="btn" data-toggle="modal">${2:Launch modal}</a>
+ 
+<!-- Modal -->
+<div id="${3:myModal}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">${4:Modal header}</h3>
+  </div>
+  <div class="modal-body">
+    <p>${5:Modal body}</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">${6:Save changes}</button>
+  </div>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tb_modal</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+#css3 > .text-shadow(${1:1px},${2:1px},${3:1px},${4:#222});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>.
+    .text-shadow</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>

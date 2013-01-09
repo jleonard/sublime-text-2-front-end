@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+
+<!-- Twitter Bootstrap Tooltip http://twitter.github.com/bootstrap/javascript.html#tooltips -->
+<a href="${1:#}" rel="tooltip" title="${2:tooltip text}">${3:link text}</a>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tb_tooltip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

@@ -1,0 +1,77 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie-7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie-8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>${1:page}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    
+    <!--social
+
+		                  .  
+		,-. ,-. ,-. . ,-. |  
+		`-. | | |   | ,-| |  
+		`-' `-' `-' ' `-^ `' 
+		                     
+		* open graph http://ogp.me/
+		----------------------------------------------------
+    <meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+
+		* twitter cards https://dev.twitter.com/docs/cards
+    ** twitter will use open graph tags as a fallback
+		----------------------------------------------------
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@TWITTER_HANDLE_FOR_SITE">
+    <meta name="twitter:creator" content="@TWITTER_HANDLE_FOR_AUTHOR">
+    <meta name="twitter:url" content="CANONICAL_URL">
+
+    end social-->
+
+    <!--typekit
+
+    .              .     .  
+    |- . . ,-. ,-. | , . |- 
+    |  | | | | |-' |<  | |  
+    `' `-| |-' `-' ' ` ' `' 
+        /| |                
+       `-' '                
+   
+    <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    typekit-->
+
+    <link rel="canonical" href="CANONICAL_URL">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+      <div id="main" class="grid">
+        ${2}
+      </div>
+      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script>
+          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
+  </body>
+</html>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_bp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

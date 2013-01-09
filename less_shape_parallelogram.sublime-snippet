@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+#shape > .parallelogram(${1:100px}, ${2:20deg}, ${3:red});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_parallelogram</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>

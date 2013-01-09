@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+font: ${1:font-style} ${2:font-variant} ${3:font-weight} ${4:font-size}/${5:line-height} ${6:font-family}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>.
+    _font</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>

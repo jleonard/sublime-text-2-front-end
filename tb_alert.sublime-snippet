@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+<!-- Twitter Bootstrap Alert http://twitter.github.com/bootstrap/javascript.html#alerts -->
+<div class="alert ${1:alert-success|alert-error} fade in">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">${2:Alert Heading}</h4>
+  ${3:<strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.}
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tb_alert</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

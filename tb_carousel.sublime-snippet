@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+    
+<!-- Twitter Bootstrap Carousel http://twitter.github.com/bootstrap/javascript.html#carousel -->
+<div id="${1:myCarousel}" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">…</div>
+    <div class="item">…</div>
+    <div class="item">…</div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#${2:myCarousel}" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#${3:myCarousel}" data-slide="next">&rsaquo;</a>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>tb_carousel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

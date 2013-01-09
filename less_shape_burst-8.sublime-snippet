@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+#shape > .burst-8(${1:100px}, ${2:#000});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_burst-8</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
