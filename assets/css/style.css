@@ -5,18 +5,20 @@ body{
 
 section.main{
   background-color:#222;
-  padding:20px;
+  padding:40px;
 }
 
 h1, h2{
   font-family: Helvetica, sans-serif;
-  color: #e6e6e6;
+  margin:0px;
 }
 
 h1{
   font-size:64px;
+  color:#3f3f3f;
 }
 
 h2{
   font-size:56px;
+  color:#363636;
 }
