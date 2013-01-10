@@ -5,9 +5,15 @@ body{
   margin:0px;
 }
 
+section{
+  width: 90%;
+  margin: 0px auto;
+}
+
 section.main{
   background-color:#222;
   padding:40px;
+  width:100%;
 }
 
 h1, h2{
