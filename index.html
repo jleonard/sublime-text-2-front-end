@@ -27,8 +27,8 @@
           <table class="table">
             <thead>
               <tr>
-                <th>snippet</th>
                 <th>tab trigger</th>
+                <th>snippet</th>
                 <th>result</th>
               </tr>
             </thead>
@@ -37,9 +37,10 @@
                 <td colspan="3">.js snippets</td>
               </tr>
               <tr><td colspan="3">jQuery snippets</td></tr>
+
               <tr>
+                <td class="trigger">_$fn</td>
                 <td>jQuery function</td>
-                <td>_$fn</td>
                 <td>
                   <pre>
                     <code class="prettyprint lang-js">
@@ -50,6 +51,43 @@
                   </pre>
                 </td>
               </tr>
+
+              <tr>
+                <td class="trigger">_$ajax</td>
+                <td>jQuery ajax request</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+$.ajax({
+  url: "",
+  data: {}
+  }
+}).done(function ( data ) {
+  /* code ... */
+}).fail(function(jqXHR,textStatus){
+  /* code ... */
+}).always(function(jqXHR,textStatus){
+  /* code ... */
+});
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger">_$on</td>
+                <td>jQuery on() function</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+$("selector").on("event", function(event){
+  /* code ... */
+});
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
             </tbody>
             <tfoot>
               <tr>
