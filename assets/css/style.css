@@ -37,6 +37,8 @@ h2{
 }
 
 .trigger span{
+  border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: whiteSmoke;
+  padding:3px;
 }
