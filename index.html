@@ -34,12 +34,42 @@
             </thead>
             <tbody>
               <tr>
-                <td colspan="3">.js snippets</td>
+                <td class="divider" colspan="3">.js snippets</td>
               </tr>
-              <tr><td colspan="3">jQuery snippets</td></tr>
 
               <tr>
-                <td class="trigger">_$fn</td>
+                <td class="trigger"><span>_fn</span></td>
+                <td>named function</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+function methodName(args){
+  /* code ... */
+}
+
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_iffe</span></td>
+                <td>iffe (<a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">Immediately Invoked Function Expression</a>)</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+(function(){ 
+  /* code */} 
+})();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr><td class="divider" colspan="3">jQuery snippets</td></tr>
+
+              <tr>
+                <td class="trigger"><span>_$fn</span></td>
                 <td>jQuery function</td>
                 <td>
                   <pre>
@@ -53,7 +83,7 @@
               </tr>
 
               <tr>
-                <td class="trigger">_$ajax</td>
+                <td class="trigger"><span>_$ajax</span></td>
                 <td>jQuery ajax request</td>
                 <td>
                   <pre>
@@ -62,7 +92,7 @@ $.ajax({
   url: "",
   data: {}
   }
-}).done(function ( data ) {
+).done(function ( data ) {
   /* code ... */
 }).fail(function(jqXHR,textStatus){
   /* code ... */
@@ -75,7 +105,7 @@ $.ajax({
               </tr>
 
               <tr>
-                <td class="trigger">_$on</td>
+                <td class="trigger"><span>_$on</span></td>
                 <td>jQuery on() function</td>
                 <td>
                   <pre>
