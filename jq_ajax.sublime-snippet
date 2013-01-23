@@ -4,12 +4,12 @@
   url: "${1}",
   data: {${2}}
   }
-}).done(function ( data ) {
-  ${3}
+).done(function ( data ) {
+  ${3:/* code ... */}
 }).fail(function(jqXHR,textStatus){
-  ${4}
+  ${4:/* code ... */}
 }).always(function(jqXHR,textStatus){
-  ${5}
+  ${5:/* code ... */}
 });
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

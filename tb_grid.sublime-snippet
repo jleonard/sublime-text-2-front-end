@@ -1,11 +1,12 @@
 <snippet>
 	<content><![CDATA[
-function ${1:method}(${2:arguments}){
-  ${0:/* code ... */}
-}
+<div class="${1:row|row-fluid">
+  <div class="span${2:4}">...</div>
+  <div class="span${3:8}">...</div>
+</div>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_fn</tabTrigger>
+	<tabTrigger>tb_grid</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger 
 	<scope>source.html</scope>
     -->
