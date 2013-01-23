@@ -1,7 +1,8 @@
 <snippet>
 	<content><![CDATA[
-for (${1:var i = 0}; ${2:i < ${3:elements.length}}; ${4:i++}) {
-    ${5:expression}
+var len = ${1:5};
+for (${2:var i = 0}; ${3:i} < ${4:len}}; ${5:i++}) {
+    ${6:/* code ... */}
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
