@@ -235,6 +235,20 @@ setTimeout(function(){/* code ... */},delay);
               </tr>
 
               <tr>
+                <td class="trigger"><span>_iffe</span></td>
+                <td>Immediately-Invoked Function Expression</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+(function(){ 
+  /* code */ 
+})();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
                 <td class="trigger"><span>_module</span></td>
                 <td>Module pattern</td>
                 <td>
@@ -255,6 +269,131 @@ var MODULE = (function () {
   
   return my;
 }());
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="divider minor" colspan="3">.js helpers</td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_days</span></td>
+                <td>day object</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+var days = {
+  0 : {
+    l : "Sunday",
+    m : "Sun",
+    s : "S"
+  },
+  1 : {
+    l : "Monday",
+    m : "Mon",
+    s : "M"
+  },
+  2 : {
+    l : "Tuesday",
+    m : "Tue",
+    s : "T"
+  },
+  3 : {
+    l : "Wednesday",
+    m : "Wed",
+    s : "W"
+  },
+  4 : {
+    l : "Thursday",
+    m : "Thurs",
+    s : "T"
+  },
+  5 : {
+    l : "Friday",
+    m : "Fri",
+    s : "F"
+  },
+  6 : {
+    l : "Saturday",
+    m : "Sat",
+    s : "S"
+  }
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_months</span></td>
+                <td>month object</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+var months = {
+  0 : {
+    l : "January",
+    m : "Jan",
+    s : "J"
+  },
+  1 : {
+    l : "February",
+    m : "Feb",
+    s : "F"
+  },
+  2 : {
+    l : "March",
+    m : "Mar",
+    s : "M"
+  },
+  3 : {
+    l : "April",
+    m : "Apr",
+    s : "A"
+  },
+  4 : {
+    l : "May",
+    m : "May",
+    s : "M"
+  },
+  5 : {
+    l : "June",
+    m : "Jun",
+    s : "J"
+  },
+  6 : {
+    l : "July",
+    m : "Jul",
+    s : "J"
+  },
+  7 : {
+    l : "August",
+    m : "Aug",
+    s : "A"
+  },
+  8 : {
+    l : "September",
+    m : "Sept",
+    s : "S"
+  },
+  9 : {
+    l : "October",
+    m : "Oct",
+    s : "O"
+  },
+  10 : {
+    l : "November",
+    m : "Nov,
+    s : "N"
+  },
+  11 : {
+    l : "December",
+    m : "Dec",
+    s : "D"
+  }
+}
                     </code>
                   </pre>
                 </td>
