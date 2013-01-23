@@ -114,20 +114,6 @@ function methodName(args){
               </tr>
 
               <tr>
-                <td class="trigger"><span>_iffe</span></td>
-                <td>IFFE (<a href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">Immediately Invoked Function Expression</a>)</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-(function(){ 
-  /* code ... */
-})();
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
                 <td class="trigger"><span>_for</span></td>
                 <td>basic for loop</td>
                 <td>
@@ -243,6 +229,32 @@ Math.floor(Math.random() * FROM) + TO;
                   <pre>
                     <code class="prettyprint lang-js">
 setTimeout(function(){/* code ... */},delay);
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_module</span></td>
+                <td>Module pattern</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+var MODULE = (function () {
+  var my = {},
+    privateVariable = 1;
+  
+  function privateMethod() {
+    /* code ... */
+  }
+  
+  my.moduleProperty = 1;
+  my.moduleMethod = function () {
+    /* code ... */
+  };
+  
+  return my;
+}());
                     </code>
                   </pre>
                 </td>
