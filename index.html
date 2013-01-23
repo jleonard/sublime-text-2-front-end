@@ -38,6 +38,22 @@
               </tr>
 
               <tr>
+                <td class="trigger"><span>_ul</span></td>
+                <td>unordered list skeleton</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-html">
+&lt;ul&gt;
+  &lt;li&gt;item one&lt;/li&gt;
+  &lt;li&gt;item two&lt;/li&gt;
+&lt;/ul&gt;
+
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
                 <td class="trigger"><span>_dl</span></td>
                 <td>definition list skeleton</td>
                 <td>
@@ -56,6 +72,30 @@
               </tr>
 
               <tr>
+                <td class="trigger"><span>_script</span></td>
+                <td>script tag</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-html">
+&lt;script src=""&gt;&lt;/script&gt;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_img</span></td>
+                <td>img tag</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-html">
+&lt;img src="" alt="" &gt;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
                 <td class="divider" colspan="3">.js snippets</td>
               </tr>
 
@@ -68,7 +108,6 @@
 function methodName(args){
   /* code ... */
 }
-
                     </code>
                   </pre>
                 </td>
@@ -81,8 +120,129 @@ function methodName(args){
                   <pre>
                     <code class="prettyprint lang-js">
 (function(){ 
-  /* code */} 
+  /* code ... */
 })();
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_for</span></td>
+                <td>basic for loop</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+for (var i = 0; i < elements.length; i++) {
+    /* code ... */
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_forin</span></td>
+                <td>for in loop to iterate object properties</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+for (var key in object) {
+   if (object.hasOwnProperty(key)) {
+      var value = object[key]; 
+   }
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_try</span></td>
+                <td>try, catch, finally statement</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+try {
+  /* code... */
+} 
+catch (e) {
+  /* code... */
+}
+finally (e) {
+  /* code... */
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_switch</span></td>
+                <td>switch statement</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+switch(var){
+  case :
+    /* code ... */
+  break;
+  case :
+    /* code ... */
+  break;
+  default:
+    /* code ... */
+  break;
+}
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_ternary</span></td>
+                <td>ternary expression</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+condition ? true : false;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_log</span></td>
+                <td>console.log()</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+console.log("statement");
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="trigger"><span>_random_between</span></td>
+                <td>random number between two numbers</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+Math.floor(Math.random() * FROM) + TO;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_timeout</span></td>
+                <td>setTimeout()</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+setTimeout(function(){/* code ... */},delay);
                     </code>
                   </pre>
                 </td>
@@ -99,6 +259,20 @@ function methodName(args){
   $(function() {
     /* code ... */
   });
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_$dr</span></td>
+                <td>jQuery document ready function</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+$(document).ready(function(e){
+  /* code ... */
+});
                     </code>
                   </pre>
                 </td>
@@ -136,6 +310,69 @@ $("selector").on("event", function(event){
   /* code ... */
 });
                     </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_$click</span></td>
+                <td>jQuery on("click") function</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+$("selector").on("click", function(event){
+  /* code ... */
+});
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr><td class="divider" colspan="3">Regular Expressions</td></tr>
+              
+              <tr>
+                <td class="trigger"><span>_regex_alphanumeric</span></td>
+                <td>RegEx to match an alphanumeric pattern</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+/^[0-9a-zA-Z]+$/
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_regex_email</span></td>
+                <td>RegEx to match common email pattern</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_regex_url</span></td>
+                <td>RegEx to match common url pattern</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_regex_decimal</span></td>
+                <td>RegEx to match a decimal number</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-js">
+/^\s*(\+|-)?((\d+(\.\d+)?)|(\.\d+))\s*$/
+</code>
                   </pre>
                 </td>
               </tr>
