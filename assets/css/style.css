@@ -42,3 +42,12 @@ h2{
   background-color: whiteSmoke;
   padding:3px;
 }
+
+.divider{
+  background-color: #f4f5f8;
+color: #222;
+background-color: #222;
+padding: 16px;
+font-size: 16px;
+font-weight: bold;
+}
