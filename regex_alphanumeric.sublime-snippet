@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-#shape > .yin-yang(${1:100px}, ${2:#000}, ${3:#333});
+/^[0-9a-zA-Z]+\$/
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_yin-yang</tabTrigger>
+	<tabTrigger>_regex_alphanumeric</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger 
 	<scope>source.html</scope>
     -->

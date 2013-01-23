@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+var ${1:MODULE} = (function () {
+  var my = {},
+    privateVariable = 1;
+  
+  function privateMethod() {
+    /* code ... */
+  }
+  
+  my.moduleProperty = 1;
+  my.moduleMethod = function () {
+    /* code ... */
+  };
+  
+  return my;
+}());
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_module</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

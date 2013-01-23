@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-Math.floor(Math.random() * ${1}) + ${2};
+Math.floor(Math.random() * ${1:FROM}) + ${2:TO};
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>_random_between</tabTrigger>

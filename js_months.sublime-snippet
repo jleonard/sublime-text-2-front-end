@@ -1,0 +1,71 @@
+<snippet>
+	<content><![CDATA[
+var months = {
+  0 : {
+    l : "January",
+    m : "Jan",
+    s : "J"
+  },
+  1 : {
+    l : "February",
+    m : "Feb",
+    s : "F"
+  },
+  2 : {
+    l : "March",
+    m : "Mar",
+    s : "M"
+  },
+  3 : {
+    l : "April",
+    m : "Apr",
+    s : "A"
+  },
+  4 : {
+    l : "May",
+    m : "May",
+    s : "M"
+  },
+  5 : {
+    l : "June",
+    m : "Jun",
+    s : "J"
+  },
+  6 : {
+    l : "July",
+    m : "Jul",
+    s : "J"
+  },
+  7 : {
+    l : "August",
+    m : "Aug",
+    s : "A"
+  },
+  8 : {
+    l : "September",
+    m : "Sept",
+    s : "S"
+  },
+  9 : {
+    l : "October",
+    m : "Oct",
+    s : "O"
+  },
+  10 : {
+    l : "November",
+    m : "Nov,
+    s : "N"
+  },
+  11 : {
+    l : "December",
+    m : "Dec",
+    s : "D"
+  }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_months</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>

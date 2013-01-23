@@ -2,13 +2,13 @@
 	<content><![CDATA[
 switch(${1:var}){
   case $2:
-    $3
+    ${3:/* code ... */}
   break;
   case $4:
-    $5
+    ${5:/* code ... */}
   break;
   default:
-    $6
+    ${6:/* code ... */}
   break;
 }
 ]]></content>

@@ -1,9 +1,12 @@
 <snippet>
 	<content><![CDATA[
-#shape > .talkbubble(${1:100px}, ${2:70px},${3:#000});
+<ul>
+  <li>${1:item one}</li>
+  <li>${2:item two}</li>
+</ul>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_talkbubble</tabTrigger>
+	<tabTrigger>_ul</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger 
 	<scope>source.html</scope>
     -->

@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+var days = {
+  0 : {
+    l : "Sunday",
+    m : "Sun",
+    s : "S"
+  },
+  1 : {
+    l : "Monday",
+    m : "Mon",
+    s : "M"
+  },
+  2 : {
+    l : "Tuesday",
+    m : "Tue",
+    s : "T"
+  },
+  3 : {
+    l : "Wednesday",
+    m : "Wed",
+    s : "W"
+  },
+  4 : {
+    l : "Thursday",
+    m : "Thurs",
+    s : "T"
+  },
+  5 : {
+    l : "Friday",
+    m : "Fri",
+    s : "F"
+  },
+  6 : {
+    l : "Saturday",
+    m : "Sat",
+    s : "S"
+  }
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_days</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
