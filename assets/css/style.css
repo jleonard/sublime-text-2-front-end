@@ -27,6 +27,10 @@ h1{
   font-weight:bold;
 }
 
+h1.span{
+  color:#777;
+}
+
 h2{
   font-size:16px;
   color:#363636;
