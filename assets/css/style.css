@@ -4,20 +4,6 @@ body{
   padding:0px;
   margin:0px;
 
-  background-image: linear-gradient(bottom, rgb(231,224,255) 21%, rgb(250,250,250) 61%);
-background-image: -o-linear-gradient(bottom, rgb(231,224,255) 21%, rgb(250,250,250) 61%);
-background-image: -moz-linear-gradient(bottom, rgb(231,224,255) 21%, rgb(250,250,250) 61%);
-background-image: -webkit-linear-gradient(bottom, rgb(231,224,255) 21%, rgb(250,250,250) 61%);
-background-image: -ms-linear-gradient(bottom, rgb(231,224,255) 21%, rgb(250,250,250) 61%);
-
-background-image: -webkit-gradient(
-  linear,
-  left bottom,
-  left top,
-  color-stop(0.21, rgb(231,224,255)),
-  color-stop(0.61, rgb(250,250,250))
-);
-
 }
 
 #main{
