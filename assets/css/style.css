@@ -21,15 +21,16 @@ h1, h2{
 }
 
 h1{
-  font-size:64px;
+  font-size:34px;
+  line-height:30px;
   color:#363636;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   border-bottom: 1px dotted #363636;
   margin-bottom: 16px;
 }
 
 h2{
-  font-size:36px;
+  font-size:16px;
   color:#363636;
 }
 
