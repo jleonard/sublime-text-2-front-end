@@ -37,7 +37,7 @@
             </thead>
             <tbody>
               <tr>
-                <td class="divider" colspan="3">.html snippets</td>
+                <td class="divider" colspan="3">html snippets</td>
               </tr>
 
               <tr>
@@ -93,6 +93,86 @@
                   <pre>
                     <code class="prettyprint lang-html">
 &lt;img src="" alt="" &gt;
+                    </code>
+                  </pre>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="trigger"><span>_img</span></td>
+                <td>img tag</td>
+                <td>
+                  <pre>
+                    <code class="prettyprint lang-html">
+&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class=&quot;no-js lt-ie9 lt-ie8 ie-7&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class=&quot;no-js lt-ie9 ie-8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9]&gt;         &lt;html class=&quot;no-js ie-9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 9]&gt;&lt;!--&gt; &lt;html class=&quot;no-js&quot;&gt; &lt;!--&lt;![endif]--&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+    &lt;title&gt;${1:page}&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+    
+    &lt;!--social
+
+                      .  
+    ,-. ,-. ,-. . ,-. |  
+    `-. | | |   | ,-| |  
+    `-' `-' `-' ' `-^ `' 
+                         
+    * open graph http://ogp.me/
+    ----------------------------------------------------
+    &lt;meta property=&quot;og:title&quot; content=&quot;&quot;&gt;
+    &lt;meta property=&quot;og:description&quot; content=&quot;&quot;&gt;
+    &lt;meta property=&quot;og:image&quot; content=&quot;&quot;&gt;
+
+    * twitter cards https://dev.twitter.com/docs/cards
+    ** twitter will use open graph tags as a fallback
+    ----------------------------------------------------
+    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
+    &lt;meta name=&quot;twitter:site&quot; content=&quot;@TWITTER_HANDLE_FOR_SITE&quot;&gt;
+    &lt;meta name=&quot;twitter:creator&quot; content=&quot;@TWITTER_HANDLE_FOR_AUTHOR&quot;&gt;
+    &lt;meta name=&quot;twitter:url&quot; content=&quot;CANONICAL_URL&quot;&gt;
+
+    end social--&gt;
+
+    &lt;!--typekit
+
+    .              .     .  
+    |- . . ,-. ,-. | , . |- 
+    |  | | | | |-' |&lt;  | |  
+    `' `-| |-' `-' ' ` ' `' 
+        /| |                
+       `-' '                
+   
+    &lt;script type=&quot;text/javascript&quot; src=&quot;//use.typekit.net/YOUR_KIT_ID.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
+
+    typekit--&gt;
+
+    &lt;link rel=&quot;canonical&quot; href=&quot;CANONICAL_URL&quot;&gt;
+    &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//ajax.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;
+
+    &lt;script src=&quot;js/vendor/modernizr-2.6.2.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;div id=&quot;main&quot; class=&quot;grid&quot;&gt;
+        ${2}
+      &lt;/div&gt;
+      &lt;script src=&quot;http://code.jquery.com/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script&gt;
+          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));
+      &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
                     </code>
                   </pre>
                 </td>
