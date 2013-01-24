@@ -11,16 +11,13 @@ section{
 }
 
 section.main{
-  background-color:#222;
-  padding:40px;
-  width:100%;
+  padding-top: 40px;
 }
 
 h1, h2{
   font-family: Helvetica, serif;
   margin:0px;
   font-weight: normal;
-
 }
 
 h1{
