@@ -53,7 +53,7 @@ var months = {
   },
   10 : {
     l : "November",
-    m : "Nov,
+    m : "Nov",
     s : "N"
   },
   11 : {
