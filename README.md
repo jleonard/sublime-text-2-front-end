@@ -4,8 +4,11 @@
 
 ## Javascript snippets
 
-####``_*`` Multiline comment  
-Outputs  
+####Multiline comment   
+
+Tab trigger : ``_*``
+
+Outputs : 
 ```
 /*
 * message
