@@ -6,9 +6,9 @@
 
 ####Multiline comment   
 
-Tab trigger : ``_*``
+``_*``
 
-Outputs : 
+
 ```
 /*
 * message
