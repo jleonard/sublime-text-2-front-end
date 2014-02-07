@@ -165,6 +165,7 @@ $(document).ready(function(e){
 $(function() {
   /* code ... */
 });
+```
 
 ### $("").on()
 ``_$on``
