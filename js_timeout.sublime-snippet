@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-setTimeout(function(){${1:/* code ... */}},${2:delay});
+setTimeout(${1},${2:delay});
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>_timeout</tabTrigger>

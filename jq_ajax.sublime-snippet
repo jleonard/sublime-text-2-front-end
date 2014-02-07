@@ -3,12 +3,14 @@
 \$.ajax({
   url: "${1}",
   data: {${2}}
-  }
-).done(function ( data ) {
+})
+.done(function ( data ) {
   ${3:/* code ... */}
-}).fail(function(jqXHR,textStatus){
+})
+.fail(function(jqXHR,textStatus){
   ${4:/* code ... */}
-}).always(function(jqXHR,textStatus){
+})
+.always(function(jqXHR,textStatus){
   ${5:/* code ... */}
 });
 ]]></content>

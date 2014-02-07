@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 var len = ${1:5};
-for (${2:var i = 0}; ${3:i} < ${4:len}; ${5:i++}) {
+for(var ${2:ii} = len - 1; ${2} >= 0; ${2} - 1){
   ${6:/* code ... */}
 }
 ]]></content>

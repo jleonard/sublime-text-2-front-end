@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\$("${1:selector}").on("${2:event}", function(event){
+\$('${1:selector}'').on('${2:event}', function(e){
   ${3:/* code ... */}
 });
 ]]></content>

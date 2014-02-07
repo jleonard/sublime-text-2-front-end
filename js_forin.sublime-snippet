@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-for (var ${1:key} in ${2:object}) {
-   if (${3:object}.hasOwnProperty(${4:key})) {
-      var ${5:value} = ${6:object}[${7:key}]; 
-   }
+for (var ${1:key} in ${2:object}){
+ if (${3:object}.hasOwnProperty(${4:key})){
+ 	var ${5:value} = ${6:object}[${7:key}];
+ }
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
