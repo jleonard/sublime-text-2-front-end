@@ -1,6 +1,6 @@
 # Sublime Text 2 Front End
 
-> snippets for common bits of .html, .css and .js
+> ### Snippets for .js, jQuery, html and css
 
 ## javascript snippets
 
@@ -175,4 +175,28 @@ $(function() {
 $('selector').on('event', function(e){
   /* code ... */
 });
+```
+
+## css snippets
+
+### @keyframes
+``keyframes``
+
+```
+@-webkit-keyframes ANIMATION_NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes ANIMATION_NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes ANIMATION_NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes ANIMATION_NAME {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 ```
