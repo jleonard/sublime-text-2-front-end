@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<video 
+  controls preload="auto" width="640" height="264"
+  poster="${1:PATH_TO_ASSETS}.png">
+ <source src="${1}.mp4" type='video/mp4' />
+ <source src="${1}.webm" type='video/webm' />
+ <source src="${1}.ogv" type='video/ogg' />
+</video>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_video</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
+
+
