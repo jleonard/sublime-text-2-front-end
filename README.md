@@ -1,6 +1,6 @@
 # Sublime Text 2 Front End
 
-> ### Snippets for .js, jQuery, html and css
+> ### Snippets for [.js](#javascript-snippets), [jQuery](#jquery-snippets), html and [css](#css-snippets)
 
 ## javascript snippets
 
