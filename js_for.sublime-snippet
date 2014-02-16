@@ -1,7 +1,8 @@
 <snippet>
 	<content><![CDATA[
-var len = ${1:5};
-for(var ${2:ii} = len - 1; ${2} >= 0; ${2} - 1){
+var len = ${1:array}.length;
+for(var ii = 0; ii < len; ii++){
+  var cur = ${1}[ii];
   ${6:/* code ... */}
 }
 ]]></content>
