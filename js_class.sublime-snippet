@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+function ${1:ClassName} (param) {
+
+  this.publicVar = 'foo';
+  var privateVar = 'bar';
+
+  var that = this;
+
+  function privateMethod(){
+    /* 
+    * this method can be accessed by
+    * priviledged methods but not by
+    * public methods.
+    */
+  }
+
+  this.priviledgedMethod = function(){
+    /* 
+    * this method has access to both
+    * the public and private properties
+    * of the object
+    */
+  }
+}
+ 
+${1:ClassName}.prototype.publicMethod = function() {};
+]]></content>
+	<tabTrigger>_Class</tabTrigger>
+</snippet>
