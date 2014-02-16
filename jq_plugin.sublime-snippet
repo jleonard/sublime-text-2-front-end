@@ -1,0 +1,56 @@
+<snippet>
+	<content><![CDATA[
+var ${1:NAME} = function (element, options) {
+  this.$element      = $(element);
+  this.options       = $.extend({}, ${1}.DEFAULTS, options)
+
+  if (this.options.toggle) this.toggle()
+}
+
+  ${1}.DEFAULTS = {}
+
+  ${1}.prototype.doSomething = function () {
+    //this.$element;
+    return true;
+  }
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_$plugin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
+
+
+;(function(\$){
+  var pluginName = '${1:PluginName}';
+  var defaults = {};
+
+  function ${1}(element,options){
+    this.element = element;
+
+    /*
+    * merge the defaults with the options
+    */
+    this.options = \$.extend({},defaults,options);
+
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    this.init();
+  }
+
+  ${1}.prototype.init = function(){
+
+  }
+
+  $.fn[pluginName] = function(options){
+    return this.each(function(){
+      if(\$.data(this,'plugin_'+pluginName)){
+        \$.data(this,'plugin_'+pluginName, new ${1}(this, options));
+      }
+    });
+  }
+
+
+})(jQuery);
