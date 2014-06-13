@@ -1,22 +1,49 @@
 <snippet>
 	<content><![CDATA[
-var ${1:NAME} = function (element, options) {
-  this.$element      = $(element);
-  this.options       = $.extend({}, ${1}.DEFAULTS, options)
+(function($){
 
-  if (this.options.toggle) this.toggle()
-}
+  var ${1:ClassName} = function (element, options){
+    
+    this.\$element  = \$(element);
 
-  ${1}.DEFAULTS = {}
+    // plugin options
+    this.options   = $.extend({}, ${1}.DEFAULTS, options);
 
-  ${1}.prototype.doSomething = function () {
-    //this.$element;
-    return true;
-  }
+    var that = this;
+
+  };
+
+  ${1}.DEFAULTS = {};
+
+  var old = \$.fn.${2:pluginName};
+
+  \$.fn.${2} = function (option) {
+    return this.each(function () {
+      var \$this   = \$(this);
+      var data    = \$this.data('${2}');
+      var options = typeof option === 'object' && option;
+      if (!data){
+        \$this.data('${2}', (data = new ${1}(this, options)));
+      }
+    });
+  };
+
+  \$.fn.${2}.Constructor = ${1};
+
+  \$.fn.${2}.noConflict = function() {
+    \$.fn.${2} = old;
+    return this;
+  };
+
+
+})(jQuery);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>_$plugin</tabTrigger>
+	<tabTrigger>_plugin</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger 
 	<scope>source.html</scope>
     -->
 </snippet>
+
+
+
