@@ -1,20 +1,20 @@
 <snippet>
 	<content><![CDATA[
 @-webkit-keyframes ${1:ANIMATION_NAME} {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { ${2} }
+  100% { ${3} }
 }
 @-moz-keyframes ${1} {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { ${2} }
+  100% { ${3} }
 }
 @-o-keyframes ${1} {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { ${2} }
+  100% { ${3} }
 }
 @keyframes ${1} {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0%   { ${2} }
+  100% { ${3} }
 }
 ]]></content>
 	<tabTrigger>_keyframes</tabTrigger>
