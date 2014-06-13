@@ -1,13 +1,13 @@
 <snippet>
 	<content><![CDATA[
-(function($){
+(function(\$){
 
   var ${1:ClassName} = function (element, options){
     
     this.\$element  = \$(element);
 
     // plugin options
-    this.options   = $.extend({}, ${1}.DEFAULTS, options);
+    this.options   = \$.extend({}, ${1}.DEFAULTS, options);
 
     var that = this;
 
