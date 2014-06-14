@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+var ${1:filtered} = ${2:array}.filter(
+	function(element){ 
+		return ${3:true|false}; 
+	}
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_filter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
