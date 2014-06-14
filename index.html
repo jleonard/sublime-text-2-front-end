@@ -33,6 +33,16 @@
         display: block;
         text-decoration: none;
         color: #fff;
+        color: #888;
+        line-height: 2em;
+      }
+      aside a.H1{
+        margin-bottom: 2em;
+        color: #d6d6d6;
+      }
+      aside a.H4{
+        margin-left: 1em;
+        color: #d6d6d6;
       }
       pre{
         background-color: #f6f6f6;
@@ -56,6 +66,13 @@
       h2{
         font-size: 2em;
       }
+      h4{
+        border-top: 1px dashed #222;
+        padding-top: 10px;
+      }
+      h6{
+        margin-bottom: 0px;
+      }
     </style>
 
     </head>
@@ -72,8 +89,85 @@
           
           <h3>basic js</h3>
 
+          <!-- js comment -->
+          <h4>Multiline comment</h4>
+          <h5>_*</h5>
+<pre>
+<code>/*
+* message
+*/
+</code></pre> 
+
+          <!-- js comment -->
+          <h4>console.log()</h4>
+          <h5>_log</h5>
+<pre>
+<code>console.log();
+</code></pre> 
+
+          <!-- for -->
+          <h4>for loop</h4>
+          <h5>_for</h5>
+<pre>
+<code>var len = array.length;
+for(var ii = 0; ii < len; ii++){
+  var cur = array[ii];
+  /* code ... */
+}
+</code></pre> 
+
+          <!-- for in -->
+          <h4>for-in loop</h4>
+          <h5>_forin</h5>
+<pre>
+<code>for (var key in object){
+ if (object.hasOwnProperty(key)){
+   var value = object[key];
+ }
+}
+</code></pre> 
+          
+          <!-- switch -->
+          <h4>switch statement</h4>
+          <h5>_switch</h5>
+<pre>
+<code>switch(var){
+  case :
+    /* code ... */
+  break;
+  case :
+    /* code ... */
+  break;
+  default:
+    /* code ... */
+  break;
+}
+</code></pre> 
+          
+          <!-- terary -->
+          <h4>ternary statement</h4>
+          <h5>_?</h5>
+<pre>
+<code>condition ? true : false;
+</code></pre> 
+
+          <!-- try/catch -->
+          <h4>try / catch / finally</h4>
+          <h5>_try</h5>
+<pre>
+<code>try {
+  /* code... */
+} 
+catch (e) {
+   /* code... */
+}
+finally (e) {
+   /* code... */
+}
+</code></pre> 
+
           <!-- filter -->
-          <h4>filter</h4>
+          <h4>Array.filter()</h4>
           <h5>_filter</h5>
 <pre>
 <code>var filtered = array.filter(
@@ -81,7 +175,31 @@
       return true|false; 
     }
   );  
-</code></pre>          
+</code></pre>   
+
+          <!-- array filter -->
+          <h4>Array.sort()</h4>
+          <h5>_sort</h5>
+<pre>
+<code>items.sort(function (a, b) {
+  if (${1:a > b}){
+    return 1;
+  }
+  if (${2:a < b}){
+    return -1;
+  }
+  // a must be equal to b
+  return 0;
+});  
+</code></pre> 
+        
+          <!-- array filter -->
+          <h4>setTimeout</h4>
+          <h5>_timeout</h5>
+<pre>
+<code>setTimeout(,delay); 
+</code></pre> 
+
 
           <h3>advanced js</h3>
 
@@ -133,9 +251,11 @@ ClassName.prototype.publicMethod = function() {};
         $(document).ready(function(e){
           $sidebar = $('aside');
           $('section').each(function(i,e){
-            $(this).children('h1').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
+            $(this).children('h1,h2,h3,h4').each(function(){
+              $(this).before("<a name='"+$(this).text()+"'></a>");
+              $sidebar.append('<a class="'+this.tagName+'" href="#'+$(this).text()+'">'+$(this).text()+'</a>');
             });
+            /*
             $(this).children('h2').each(function(){
               $sidebar.append('<a href="">'+$(this).text()+'</a>');
             });
@@ -145,10 +265,12 @@ ClassName.prototype.publicMethod = function() {};
             $(this).children('h4').each(function(){
               $sidebar.append('<a href="">'+$(this).text()+'</a>');
             });
+            */
           });
+
+          $('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
         });
       </script>
   </body>
 </html>
-
