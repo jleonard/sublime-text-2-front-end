@@ -7,21 +7,27 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
     <style>
-      body{
-        font-family: 'Lato', sans-serif;;
+      *{
+        box-sizing: border-box;
       }
-      aside,main{
-        float: left;
+      body{
+        font-family: 'Lato', sans-serif;
+        margin: 0;
       }
       main{
-        margin: 0 auto;
-        width: 90%;
+        margin-left: 40%;
+        margin-right: 10%;
       }
       aside{
         background-color: #222;
+        min-width: 30%;
+        padding: 40px;
+        position: fixed;
+        top: 0;
+        height: 100%;
       }
       aside a{
         display: block;
@@ -35,6 +41,21 @@
         border: 2px solid #d6d6d6;
         border-left-width: 10px;
       }
+      h1,h2,h3,h4,h5,h6,p{
+         text-rendering: optimizeLegibility;
+      }
+      h1{
+        font-size: 4em;
+        font-weight: 100;
+      }
+      h1 sub{
+        display: block;
+        font-size: 0.33em;
+        font-weight: 300;
+      }
+      h2{
+        font-size: 2em;
+      }
     </style>
 
     </head>
@@ -43,7 +64,7 @@
       </aside>
       <main>
         <section>
-          <h1>Front End Snippets</h1>
+          <h1>Front End Snippets <sub>For Sublime Text</sub></h1>
         </section>
 
         <section>
@@ -55,8 +76,11 @@
           <h4>filter</h4>
           <h5>_filter</h5>
 <pre>
-<code>
-/** todo **/  
+<code>var filtered = array.filter(
+    function(element){ 
+      return true|false; 
+    }
+  );  
 </code></pre>          
 
           <h3>advanced js</h3>
