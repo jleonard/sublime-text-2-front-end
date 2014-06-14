@@ -28,6 +28,8 @@
 
     </head>
     <body>
+      <aside>
+      </aside>
       <main>
         <section>
           <h1>Front End Snippets</h1>
@@ -41,7 +43,10 @@
           <!-- filter -->
           <h4>filter</h4>
           <h5>_filter</h5>
-          
+<pre>
+<code>
+/** todo **/  
+</code></pre>          
 
           <h3>advanced js</h3>
 
@@ -87,10 +92,26 @@ ClassName.prototype.publicMethod = function() {};
         </section>
 
       </main>
-      <script src="http://code.jquery.com/jquery.min.js"></script>
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
       <script>
+        var $sidebar;
         $(document).ready(function(e){
-          $('pre').each('<h6>Result</h6>');
+          $sidebar = $('aside');
+          $('section').each(function(i,e){
+            $(this).children('h1').each(function(){
+              $sidebar.append('<a href="">'+$(this).text()+'</a>');
+            });
+            $(this).children('h2').each(function(){
+              $sidebar.append('<a href="">'+$(this).text()+'</a>');
+            });
+            $(this).children('h3').each(function(){
+              $sidebar.append('<a href="">'+$(this).text()+'</a>');
+            });
+            $(this).children('h4').each(function(){
+              $sidebar.append('<a href="">'+$(this).text()+'</a>');
+            });
+          });
+          $('pre').before('<h6>Result</h6>');
         });
       </script>
   </body>
