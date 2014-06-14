@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-;(function(${2}){
+(function(${2}){
   ${3:/* code */}
 })(${1});
 ]]></content>

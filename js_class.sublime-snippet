@@ -10,12 +10,12 @@ function ${1:ClassName} (param) {
   function privateMethod(){
     /* 
     * this method can be accessed by
-    * priviledged methods but not by
+    * privileged methods but not by
     * public methods.
     */
   }
 
-  this.priviledgedMethod = function(){
+  this.privilegedMethod = function(){
     /* 
     * this method has access to both
     * the public and private properties
@@ -26,5 +26,5 @@ function ${1:ClassName} (param) {
  
 ${1:ClassName}.prototype.publicMethod = function() {};
 ]]></content>
-	<tabTrigger>_Class</tabTrigger>
+	<tabTrigger>_class</tabTrigger>
 </snippet>
