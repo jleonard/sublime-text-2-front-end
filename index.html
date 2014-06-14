@@ -1,674 +1,73 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie-7"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9 ie-8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sublime Text 2 : Front End Snippets</title>
-    <meta name="description" content="Code snippets for common html css and js tasks">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front End Snippets</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-    <link rel="canonical" href="CANONICAL_URL">
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link href="assets/js/libs/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="">
 
     </head>
-    <body onload="prettyPrint()">
-
-      <a href="https://github.com/jleonard/sublime-text-2-front-end"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
-
-      <div id="main" class="grid">
-        <section class="main">
-          <h1>Sublime Text 2 <span>front end</span></h1>
-          <h2>Snippets for common front end tasks</h2>
+    <body>
+      <main>
+        <section>
+          <h1>Front End Snippets</h1>
         </section>
 
         <section>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>tab trigger</th>
-                <th>snippet</th>
-                <th>result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="divider" colspan="3">html snippets</td>
-              </tr>
+          <h2>javascript snippets</h2>
 
-              <tr>
-                <td class="trigger"><span>_ul</span></td>
-                <td>unordered list skeleton</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-html">
-&lt;ul&gt;
-  &lt;li&gt;item one&lt;/li&gt;
-  &lt;li&gt;item two&lt;/li&gt;
-&lt;/ul&gt;
-
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_dl</span></td>
-                <td>definition list skeleton</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-html">
-&lt;dl&gt;
-  &lt;dt&gt;item one&lt;/dt&gt;
-    &lt;dd&gt;description&lt;/dd&gt;
-  &lt;dt&gt;item two&lt;/dt&gt;
-    &lt;dd&gt;description&lt;/dd&gt;
-&lt;/dl&gt;
-
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_script</span></td>
-                <td>script tag</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-html">
-&lt;script src=""&gt;&lt;/script&gt;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_img</span></td>
-                <td>img tag</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-html">
-&lt;img src="" alt="" &gt;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_bp</span></td>
-                <td>html5 boilerplate page</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-html">
-&lt;!DOCTYPE html&gt;
-&lt;!--[if lt IE 7]&gt;      &lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 7]&gt;         &lt;html class=&quot;no-js lt-ie9 lt-ie8 ie-7&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 8]&gt;         &lt;html class=&quot;no-js lt-ie9 ie-8&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 9]&gt;         &lt;html class=&quot;no-js ie-9&quot;&gt; &lt;![endif]--&gt;
-&lt;!--[if gt IE 9]&gt;&lt;!--&gt; &lt;html class=&quot;no-js&quot;&gt; &lt;!--&lt;![endif]--&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
-    &lt;title&gt;${1:page}&lt;/title&gt;
-    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
-    
-    &lt;!--social
-
-                      .  
-    ,-. ,-. ,-. . ,-. |  
-    `-. | | |   | ,-| |  
-    `-' `-' `-' ' `-^ `' 
-                         
-    * open graph http://ogp.me/
-    ----------------------------------------------------
-    &lt;meta property=&quot;og:title&quot; content=&quot;&quot;&gt;
-    &lt;meta property=&quot;og:description&quot; content=&quot;&quot;&gt;
-    &lt;meta property=&quot;og:image&quot; content=&quot;&quot;&gt;
-
-    * twitter cards https://dev.twitter.com/docs/cards
-    ** twitter will use open graph tags as a fallback
-    ----------------------------------------------------
-    &lt;meta name=&quot;twitter:card&quot; content=&quot;summary&quot;&gt;
-    &lt;meta name=&quot;twitter:site&quot; content=&quot;@TWITTER_HANDLE_FOR_SITE&quot;&gt;
-    &lt;meta name=&quot;twitter:creator&quot; content=&quot;@TWITTER_HANDLE_FOR_AUTHOR&quot;&gt;
-    &lt;meta name=&quot;twitter:url&quot; content=&quot;CANONICAL_URL&quot;&gt;
-
-    end social--&gt;
-
-    &lt;!--typekit
-
-    .              .     .  
-    |- . . ,-. ,-. | , . |- 
-    |  | | | | |-' |&lt;  | |  
-    `' `-| |-' `-' ' ` ' `' 
-        /| |                
-       `-' '                
-   
-    &lt;script type=&quot;text/javascript&quot; src=&quot;//use.typekit.net/YOUR_KIT_ID.js&quot;&gt;&lt;/script&gt;
-    &lt;script type=&quot;text/javascript&quot;&gt;try{Typekit.load();}catch(e){}&lt;/script&gt;
-
-    typekit--&gt;
-
-    &lt;link rel=&quot;canonical&quot; href=&quot;CANONICAL_URL&quot;&gt;
-    &lt;link rel=&quot;dns-prefetch&quot; href=&quot;//ajax.googleapis.com&quot;&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;
-
-    &lt;script src=&quot;js/vendor/modernizr-2.6.2.min.js&quot;&gt;&lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;div id=&quot;main&quot; class=&quot;grid&quot;&gt;
-        ${2}
-      &lt;/div&gt;
-      &lt;script src=&quot;http://code.jquery.com/jquery.min.js&quot;&gt;&lt;/script&gt;
-      &lt;script&gt;
-          var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-      &lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="divider" colspan="3">.js snippets</td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_fn</span></td>
-                <td>named function</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-function methodName(args){
-  /* code ... */
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_for</span></td>
-                <td>basic for loop</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-var len = 5;
-for (var i = 0; i < len}; i++) {
-    /* code ... */
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_forin</span></td>
-                <td>for in loop to iterate object properties</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-for (var key in object) {
-   if (object.hasOwnProperty(key)) {
-      var value = object[key]; 
-   }
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_try</span></td>
-                <td>try, catch, finally statement</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-try {
-  /* code... */
-} 
-catch (e) {
-  /* code... */
-}
-finally (e) {
-  /* code... */
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_switch</span></td>
-                <td>switch statement</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-switch(var){
-  case :
-    /* code ... */
-  break;
-  case :
-    /* code ... */
-  break;
-  default:
-    /* code ... */
-  break;
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_ternary</span></td>
-                <td>ternary expression</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-condition ? true : false;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_log</span></td>
-                <td>console.log()</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-console.log("statement");
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-
-              <tr>
-                <td class="trigger"><span>_random_between</span></td>
-                <td>random number between two numbers</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-Math.floor(Math.random() * FROM) + TO;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_timeout</span></td>
-                <td>setTimeout()</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-setTimeout(function(){/* code ... */},delay);
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_iffe</span></td>
-                <td>Immediately-Invoked Function Expression</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-(function(){ 
-  /* code */ 
+          <!-- iife -->
+          <h4>iife</h4>
+          <h5>_iife</h5>
+<pre><code>
+(function(){
+  /* code */
 })();
-                    </code>
-                  </pre>
-                </td>
-              </tr>
+</code></pre>
 
-              <tr>
-                <td class="trigger"><span>_module</span></td>
-                <td>Module pattern</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-var MODULE = (function () {
-  var my = {},
-    privateVariable = 1;
-  
-  function privateMethod() {
-    /* code ... */
+          <!-- class -->
+          <h4>Class</h4>
+          <h5>_class</h5>
+<pre><code>
+function ClassName (param) {
+
+  this.publicVar = 'foo';
+  var privateVar = 'bar';
+
+  var that = this;
+
+  function privateMethod(){
+    /* 
+    * this method can be accessed by
+    * privileged methods but not by
+    * public methods.
+    */
   }
-  
-  my.moduleProperty = 1;
-  my.moduleMethod = function () {
-    /* code ... */
-  };
-  
-  return my;
-}());
-                    </code>
-                  </pre>
-                </td>
-              </tr>
 
-              <tr>
-                <td class="divider minor" colspan="3">.js helpers</td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_days</span></td>
-                <td>day object</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-var days = {
-  0 : {
-    l : "Sunday",
-    m : "Sun",
-    s : "S"
-  },
-  1 : {
-    l : "Monday",
-    m : "Mon",
-    s : "M"
-  },
-  2 : {
-    l : "Tuesday",
-    m : "Tue",
-    s : "T"
-  },
-  3 : {
-    l : "Wednesday",
-    m : "Wed",
-    s : "W"
-  },
-  4 : {
-    l : "Thursday",
-    m : "Thurs",
-    s : "T"
-  },
-  5 : {
-    l : "Friday",
-    m : "Fri",
-    s : "F"
-  },
-  6 : {
-    l : "Saturday",
-    m : "Sat",
-    s : "S"
+  this.privilegedMethod = function(){
+    /* 
+    * this method has access to both
+    * the public and private properties
+    * of the object
+    */
   }
 }
-                    </code>
-                  </pre>
-                </td>
-              </tr>
+ 
+ClassName.prototype.publicMethod = function() {};
+</code></pre>
 
-              <tr>
-                <td class="trigger"><span>_months</span></td>
-                <td>month object</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-var months = {
-  0 : {
-    l : "January",
-    m : "Jan",
-    s : "J"
-  },
-  1 : {
-    l : "February",
-    m : "Feb",
-    s : "F"
-  },
-  2 : {
-    l : "March",
-    m : "Mar",
-    s : "M"
-  },
-  3 : {
-    l : "April",
-    m : "Apr",
-    s : "A"
-  },
-  4 : {
-    l : "May",
-    m : "May",
-    s : "M"
-  },
-  5 : {
-    l : "June",
-    m : "Jun",
-    s : "J"
-  },
-  6 : {
-    l : "July",
-    m : "Jul",
-    s : "J"
-  },
-  7 : {
-    l : "August",
-    m : "Aug",
-    s : "A"
-  },
-  8 : {
-    l : "September",
-    m : "Sept",
-    s : "S"
-  },
-  9 : {
-    l : "October",
-    m : "Oct",
-    s : "O"
-  },
-  10 : {
-    l : "November",
-    m : "Nov,
-    s : "N"
-  },
-  11 : {
-    l : "December",
-    m : "Dec",
-    s : "D"
-  }
-}
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr><td class="divider" colspan="3">jQuery snippets</td></tr>
-
-              <tr>
-                <td class="trigger"><span>_$fn</span></td>
-                <td>jQuery function</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-  $(function() {
-    /* code ... */
-  });
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_$dr</span></td>
-                <td>jQuery document ready function</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-$(document).ready(function(e){
-  /* code ... */
-});
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_$ajax</span></td>
-                <td>jQuery ajax request</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-$.ajax({
-  url: "",
-  data: {}
-  }
-).done(function ( data ) {
-  /* code ... */
-}).fail(function(jqXHR,textStatus){
-  /* code ... */
-}).always(function(jqXHR,textStatus){
-  /* code ... */
-});
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_$on</span></td>
-                <td>jQuery on() function</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-$("selector").on("event", function(event){
-  /* code ... */
-});
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_$click</span></td>
-                <td>jQuery on("click") function</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-$("selector").on("click", function(event){
-  /* code ... */
-});
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr><td class="divider" colspan="3">Regular Expressions</td></tr>
-              
-              <tr>
-                <td class="trigger"><span>_regex_alphanumeric</span></td>
-                <td>RegEx to match an alphanumeric pattern</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-/^[0-9a-zA-Z]+$/
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_regex_email</span></td>
-                <td>RegEx to match common email pattern</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
-                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_regex_url</span></td>
-                <td>RegEx to match common url pattern</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/                    </code>
-                  </pre>
-                </td>
-              </tr>
-
-              <tr>
-                <td class="trigger"><span>_regex_decimal</span></td>
-                <td>RegEx to match a decimal number</td>
-                <td>
-                  <pre>
-                    <code class="prettyprint lang-js">
-/^\s*(\+|-)?((\d+(\.\d+)?)|(\.\d+))\s*$/
-</code>
-                  </pre>
-                </td>
-              </tr>
-
-            </tbody>
-            <tfoot>
-              <tr>
-                <td></td>
-              </tr>
-            </tfoot>
-          </table>
         </section>
 
-      </div>
+      </main>
       <script src="http://code.jquery.com/jquery.min.js"></script>
-      <script type="text/javascript" src="assets/js/libs/google-code-prettify/prettify.js"></script>
       <script>
-          var _gaq=[['_setAccount','UA-37507961-1'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));
-
-          var days = {
-            0 : {
-              l : "Sunday",
-              m : "Sun",
-              s : "S"
-            },
-            1 : {
-              l : "Monday",
-              m : "Mon",
-              s : "M"
-            },
-            2 : {
-              l : "Tuesday",
-              m : "Tue",
-              s : "T"
-            },
-            3 : {
-              l : "Wednesday",
-              m : "Wed",
-              s : "W"
-            },
-            4 : {
-              l : "Thursday",
-              m : "Thurs",
-              s : "T"
-            },
-            5 : {
-              l : "Friday",
-              m : "Fri",
-              s : "F"
-            },
-            6 : {
-              l : "Saturday",
-              m : "Sat",
-              s : "S"
-            }
-          }
-
-          console.log(days[1].l);
+        $(document).ready(function(e){
+          $('pre').each('<h6>Result</h6>');
+        });
       </script>
   </body>
 </html>
+
