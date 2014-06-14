@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+items.sort(function (a, b) {
+  if (${1:a > b}){
+    return 1;
+  }
+  if (${2:a < b}){
+    return -1;
+  }
+  // a must be equal to b
+  return 0;
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>_sort</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
