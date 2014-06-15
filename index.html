@@ -194,7 +194,7 @@ finally (e) {
 });  
 </code></pre> 
         
-          <!-- array filter -->
+          <!-- setTimeout -->
           <h4>setTimeout</h4>
           <h5>_timeout</h5>
 <pre>
@@ -253,11 +253,33 @@ finally (e) {
 ClassName.prototype.publicMethod = function() {};
 </code></pre>
 
+          <!-- singleton -->
+          <h4>Singleton</h4>
+          <h5>_singleton</h5>
+
+<pre><code>var ClassName;
+(function() {
+    var instance;
+
+    ClassName = function ClassName() {
+        if (instance) {
+            return instance;
+        }
+
+        instance = this;
+
+        /* code */
+    };
+}());
+</code></pre>
+
+
+
           <!-- promise -->
           <h4>Promise</h4>
           <h5>_promise</h5>
 
-<pre><code>// todo
+<pre><code>_promise
 </code></pre>
 
           <!-- then -->
