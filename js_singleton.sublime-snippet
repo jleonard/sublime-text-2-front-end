@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+var ${1:ClassName};
+(function() {
+    var instance;
+
+    ${1:ClassName} = function ${1:ClassName}() {
+        if (instance) {
+            return instance;
+        }
+
+        instance = this;
+
+        ${2:/* code */}
+    };
+}());
+]]></content>
+	<tabTrigger>_singleton</tabTrigger>
+</snippet>
