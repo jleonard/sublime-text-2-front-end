@@ -16,6 +16,7 @@
       body{
         font-family: 'Lato', sans-serif;
         margin: 0;
+        height: 100%;
       }
       main{
         margin-left: 40%;
@@ -25,7 +26,7 @@
         background-color: #222;
         min-width: 30%;
         padding: 40px;
-        position: fixed;
+        position: absolute;
         top: 0;
         height: 100%;
       }
@@ -203,7 +204,7 @@ finally (e) {
 
           
           <!-- function -->
-          <h4>function</h4>
+          <h4>named function</h4>
           <h5>_function</h5>
 <pre>
 <code>function method(arguments){
@@ -316,8 +317,45 @@ ClassName.prototype.publicMethod = function() {};
       &lt;/main&gt;
       &lt;script type="text/javascript" src=""&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html>
+&lt;/html&gt;
 </code></pre>
+        
+          <!-- video -->
+          <h4>video tag</h4>
+          <h5>_video</h5>
+
+<pre><code>&lt;video 
+  controls preload="auto" width="640" height="264"
+  poster="PATH_TO_ASSETS.png"&gt;
+ &lt;source src="PATH_TO_ASSETS.mp4" type='video/mp4' /&gt;
+ &lt;source src="PATH_TO_ASSETS.webm" type='video/webm' /&gt;
+ &lt;source src="PATH_TO_ASSETS.ogv" type='video/ogg' /&gt;
+&lt;/video&gt;
+</code></pre>
+
+        </section>
+
+        <section>
+          <h2>regular expression snippets</h2>
+
+          <!-- alphanumeric -->
+          <h4>alphanumeric</h4>
+          <h5>_regex_alphanumeric</h5>
+<pre><code>/^[0-9a-zA-Z]+$/
+</code></pre>
+
+          <!-- email -->
+          <h4>email</h4>
+          <h5>_regex_email</h5>
+<pre><code>/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+</code></pre>
+
+          <!-- url -->
+          <h4>url</h4>
+          <h5>_regex_url</h5>
+<pre><code>/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+</code></pre>
+
         </section>
 
       </main>
@@ -327,6 +365,8 @@ ClassName.prototype.publicMethod = function() {};
         var $sidebar;
         $(document).ready(function(e){
           $sidebar = $('aside');
+          
+          console.log($('main').height());
           $('section').each(function(i,e){
             $(this).children('h1,h2,h3,h4').each(function(){
               $(this).before("<a name='"+$(this).text()+"'></a>");
@@ -347,6 +387,8 @@ ClassName.prototype.publicMethod = function() {};
 
           $('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
+
+          $sidebar.height($('main').outerHeight());
         });
       </script>
   </body>
