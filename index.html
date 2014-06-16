@@ -275,20 +275,39 @@ ClassName.prototype.publicMethod = function() {};
 </code></pre>
 
 
-          <!-- promise 
+          <!-- promise -->
           <h4>Promise</h4>
           <h5>_promise</h5>
 
-<pre><code>_promise 
-</code></pre>
--->
+<pre><code>var promise = new Promise(function(resolve, reject) {
+  
+  var success;
 
-          <!-- then 
+  /* code */
+
+  if (success) {
+    resolve();
+  }
+  else {
+    reject(Error());
+  }
+}); 
+</code></pre>
+
+
+          <!-- then -->
           <h4>Promise (then)</h4>
           <h5>_then</h5>
 
-<pre><code>// todo
-</code></pre>-->
+<pre><code>promise.then(
+  function(result) {
+    console.log(result);
+  },
+  function(err) {
+    console.log(err);
+  }
+);
+</code></pre>
 
         </section>
 
