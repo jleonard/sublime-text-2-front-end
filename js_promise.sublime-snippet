@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+var ${1:promise} = new Promise(function(resolve, reject) {
+  
+  var success;
+
+  ${2:/* code */}
+
+  if (success) {
+    resolve(${3});
+  }
+  else {
+    reject(Error(${4}));
+  }
+});
+]]></content>
+	<tabTrigger>_promise</tabTrigger>
+</snippet>

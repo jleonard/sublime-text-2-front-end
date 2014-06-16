@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+${1:promise}.then(
+  function(result) {
+    ${2:console.log(result);}
+  },
+  function(err) {
+    ${3:console.log(err);}
+  }
+);
+]]></content>
+	<tabTrigger>_then</tabTrigger>
+</snippet>
