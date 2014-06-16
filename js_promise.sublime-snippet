@@ -13,6 +13,15 @@ var ${1:promise} = new Promise(function(resolve, reject) {
     reject(Error(${4}));
   }
 });
+
+${1:promise}.then(
+  function(result) {
+    ${5:console.log(result);}
+  },
+  function(err) {
+    ${6:console.log(err);}
+  }
+);
 ]]></content>
 	<tabTrigger>_promise</tabTrigger>
 </snippet>
