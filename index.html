@@ -46,10 +46,10 @@
         color: #d6d6d6;
       }
       pre{
-        background-color: #f6f6f6;
+        background-color: #F0FFFF;
         border-radius: 10px;
         padding: 10px;
-        border: 2px solid #d6d6d6;
+        border: 1px solid #0EBFE9;
         border-left-width: 10px;
       }
       h1,h2,h3,h4,h5,h6,p{
@@ -71,6 +71,12 @@
         border-top: 1px dashed #222;
         padding-top: 10px;
         font-size: 1.5em;
+      }
+      h5:before{
+        display: inline-block;
+        content: "tab trigger";
+        margin-right: 10px;
+        font-weight: 500;
       }
       h6{
         margin-bottom: 0px;
@@ -428,7 +434,7 @@ bower_components
             */
           });
 
-          $('h5').before('<h6>Tab Trigger</h6>');
+          //$('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
 
           $sidebar.height($('main').outerHeight());
