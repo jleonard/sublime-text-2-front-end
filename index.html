@@ -53,6 +53,7 @@
         padding: 10px;
         /*border: 1px solid #0EBFE9;*/
         border-left-width: 10px;
+        overflow-x: scroll;
       }
       h1,h2,h3,h4,h5,h6,p{
          text-rendering: optimizeLegibility;
@@ -319,7 +320,16 @@ ClassName.prototype.publicMethod = function() {};
   else {
     reject(Error());
   }
-}); 
+});
+
+promise.then(
+  function(result) {
+    console.log(result);
+  },
+  function(err) {
+    console.log(err);
+  }
+);
 </code></pre>
 
 
