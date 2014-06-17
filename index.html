@@ -129,6 +129,22 @@ for(var ii = 0; ii < len; ii++){
   /* code ... */
 }
 </code></pre> 
+          
+          <!-- google analytics -->
+          <h4>Google Analytics</h4>
+          <h5>_ga</h5>
+<pre>
+<code>var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '${1:UA-XXXXX-X}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</code>
+</pre>
 
           <!-- for in -->
           <h4>for-in loop</h4>
