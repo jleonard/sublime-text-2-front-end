@@ -1,0 +1,5 @@
+<snippet>
+  <content><![CDATA[cubic-bezier(${1:0.1},${2:1},${3:0.5},${4:0.5})
+]]></content>
+  <tabTrigger>_bezier</tabTrigger>
+</snippet>

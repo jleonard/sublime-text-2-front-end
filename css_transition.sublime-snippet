@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+-webkit-transition-property: ${1:all};
+transition-property: ${1:all};
+
+-webkit-transition-duration: ${2:750ms};
+transition-duration: ${2:750ms};
+
+-webkit-transition-timing-function: ${3:ease-in};
+transition-timing-function: ${3:ease-in};
+
+-webkit-transition-delay: ${4:500ms};
+transition-delay: ${4:5000ms};
+
+]]></content>
+  <tabTrigger>_transition</tabTrigger>
+</snippet>

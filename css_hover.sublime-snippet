@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+${1:div}:hover{
+  ${2}
+}
+]]></content>
+  <tabTrigger>_hover</tabTrigger>
+</snippet>
