@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+
+function ${2:handlerFunction}(){
+  return function(_,data){
+    console.log('subscribe ',data);
+  };
+}
+
+\$.subscribe('${1:whatever.event.name}',${2:handlerFunction}());
+
+]]></content>
+  <tabTrigger>_subscribe</tabTrigger>
+</snippet>
+
+
