@@ -439,9 +439,9 @@ function method(arguments){
 ## css snippets
 
 
-    #### responsive breakpoint
+#### responsive breakpoint
 
-    ##### Tab Trigger:  _breakpoint
+##### Tab Trigger:  _breakpoint
 
 ```css
 @media all and (min-width: 50em) {
@@ -501,49 +501,46 @@ function method(arguments){
 
 ##### Tab Trigger:  _regex_alphanumeric
 
-     ```js
-     /^[0-9a-zA-Z]+$/
-    ``` 
+ ```js
+ /^[0-9a-zA-Z]+$/
+``` 
 
-    #### email
+#### email
 
-    ##### Tab Trigger:  _regex_email
+##### Tab Trigger:  _regex_email
 
-     ```js
-     /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
-    ``` 
+ ```js
+ /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+``` 
 
-    #### url
+#### url
 
-    ##### Tab Trigger:  _regex_url
+##### Tab Trigger:  _regex_url
 
-     ```js
-     /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
-    ``` 
-
-              
-
-             
-
-    ## misc. snippets
+ ```js
+ /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+``` 
 
 
-    #### .gitignore
+## misc. snippets
 
-    ##### Tab Trigger:  _gitignore
 
-     
-    ```bash
-    # osx noise
-    .DS_Store
+#### .gitignore
 
-    # svn & cvs
-    .svn
-    CVS
+##### Tab Trigger:  _gitignore
 
-    *.log
-    node_modules
-    bower_components
+ 
+```bash
+# osx noise
+.DS_Store
 
-    # project specific
-    ```
+# svn & cvs
+.svn
+CVS
+
+*.log
+node_modules
+bower_components
+
+# project specific
+```
