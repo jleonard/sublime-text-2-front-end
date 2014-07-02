@@ -393,6 +393,60 @@ promise.then(
         </section>
 
         <section>
+          <h2>css snippets</h2>
+
+          <!-- breakpoints -->
+          <h4>responsive breakpoint</h4>
+          <h5>_breakpoint</h5>
+<pre><code>
+@media all and (min-width: 50em) {
+  
+}
+</code></pre>
+          
+        <!-- keyframes -->
+        <h4>animation @keyframes</h4>
+        <h5>_keyframes</h5>
+
+<pre><code>
+@-webkit-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@-moz-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@-o-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+</pre></code>
+
+        <!-- css transition -->
+        <h4>transition</h4>
+        <h5>_transition</h5>
+<pre><code>
+-webkit-transition-property: all;
+transition-property: all;
+
+-webkit-transition-duration: 750ms;
+transition-duration: 750ms;
+
+-webkit-transition-timing-function: ease-in;
+transition-timing-function: ease-in;
+
+-webkit-transition-delay: 500ms;
+transition-delay: 500ms;
+</code></pre>
+        
+        </section>
+
+        <section>
           <h2>regular expression snippets</h2>
 
           <!-- alphanumeric -->
@@ -447,7 +501,6 @@ bower_components
         $(document).ready(function(e){
           $sidebar = $('aside');
           
-          console.log($('main').height());
           $('section').each(function(i,e){
             $(this).children('h1,h2,h3,h4').each(function(){
               $(this).before("<a name='"+$(this).text()+"'></a>");
