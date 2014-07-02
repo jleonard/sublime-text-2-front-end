@@ -295,49 +295,42 @@ function method(arguments){
     });
   ``` 
 
-              <!--document ready-->
 
-    #### $(document).ready()
+#### $(document).ready()
 
-    ##### Tab Trigger:  _$dr
+##### Tab Trigger:  _$dr
 
-     `
+     ```js
     $(document).ready(function(e){
       /* code ... */
     });
-    ` 
+    ``` 
 
-              <!--function-->
 
-    #### $(function)
+#### $(function)
 
-    ##### Tab Trigger:  _$fn
+##### Tab Trigger:  _$fn
 
-     `
+     ```js
     $(function() {
       /* code ... */
     });
-    ` 
+    ``` 
 
-              <!--on-->
+#### $('.selector').on()
+##### Tab Trigger:  _$on
 
-    #### $('.selector').on()
-
-    ##### Tab Trigger:  _$on
-
-     `
+     ```js
     $('selector').on('event', function(e){
       /* code ... */
     });
-    ` 
-
-            <!-- plugin -->
+    ```
 
     #### plugin boilerplate
 
     ##### Tab Trigger:  _plugin
 
-     `
+     ```js
     (function($){
 
       var ClassName = function (element, options){
@@ -374,21 +367,21 @@ function method(arguments){
       };
 
     })(jQuery);
-    ` 
+    ``` 
 
-    #### publish [(tiny pub/sub)](https://github.com/cowboy/jquery-tiny-pubsub)
+#### publish [(tiny pub/sub)](https://github.com/cowboy/jquery-tiny-pubsub)
 
-    ##### Tab Trigger:  _publish
+##### Tab Trigger:  _publish
 
-     `
+     ```js
       $.publish('whatever.event.name',payload);
-    ` 
+    ``` 
 
-    #### subscribe [(tiny pub/sub)](https://github.com/cowboy/jquery-tiny-pubsub)
+#### subscribe [(tiny pub/sub)](https://github.com/cowboy/jquery-tiny-pubsub)
 
-    ##### Tab Trigger:  _subscribe
+##### Tab Trigger:  _subscribe
 
-      `
+    ```js
       function handlerFunction(){
         return function(_,data){
           console.log('subscribe ',data);
@@ -396,21 +389,20 @@ function method(arguments){
       }
 
       $.subscribe('whatever.event.name',handlerFunction());
-    `        
+    ```        
 
               
 
              
 
-    ## html snippets
+## html snippets
 
-              <!-- html -->
+#### .html page
 
-    #### .html page
+##### Tab Trigger:  _html
 
-    ##### Tab Trigger:  _html
-
-     `&lt;!DOCTYPE html&gt;
+  ```html
+     &lt;!DOCTYPE html&gt;
     &lt;html&gt;
       &lt;head&gt;
         &lt;meta charset="utf-8"&gt;
@@ -429,7 +421,7 @@ function method(arguments){
           &lt;script type="text/javascript" src=""&gt;&lt;/script&gt;
       &lt;/body&gt;
     &lt;/html&gt;
-    ` 
+``` 
 
               <!-- video -->
 
