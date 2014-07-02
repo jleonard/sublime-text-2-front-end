@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+@media ${1:all} and (${2:min-width}: ${3:50em}) {
+  ${4}
+}
+]]></content>
+  <tabTrigger>_breakpoint</tabTrigger>
+</snippet>
