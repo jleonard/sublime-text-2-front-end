@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 
-\$.publish('${1:whatever.event.name}',${2:payload};
+\$.publish('${1:whatever.event.name}',${2:payload});
 
 ]]></content>
   <tabTrigger>_publish</tabTrigger>
