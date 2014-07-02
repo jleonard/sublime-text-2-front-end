@@ -175,12 +175,11 @@ function method(arguments){
 })();
 ``` 
 
-          <!-- class -->
-
-#### Class
+#### Class boilerplate
 
 ##### Tab Trigger:  _class
 
+```js
     function ClassName (param) {
 
       this.publicVar = 'foo';
@@ -206,15 +205,14 @@ function method(arguments){
     }
 
     ClassName.prototype.publicMethod = function() {};
-    ` 
+``` 
 
-              <!-- singleton -->
+#### Singleton
 
-    #### Singleton
+##### Tab Trigger:  _singleton
 
-    ##### Tab Trigger:  _singleton
-
-     `var ClassName;
+```js
+     var ClassName;
     (function() {
         var instance;
 
@@ -228,15 +226,14 @@ function method(arguments){
             /* code */
         };
     }());
-    ` 
+``` 
 
-              <!-- promise -->
+#### Promise
 
-    #### Promise
+##### Tab Trigger:  _promise
 
-    ##### Tab Trigger:  _promise
-
-     `var promise = new Promise(function(resolve, reject) {
+  ```js
+     var promise = new Promise(function(resolve, reject) {
 
       var success;
 
@@ -258,51 +255,45 @@ function method(arguments){
         console.log(err);
       }
     );
-    ` 
+``` 
 
-              <!-- then -->
 
-    #### Promise (then)
+#### Promise (then)
 
-    ##### Tab Trigger:  _then
+##### Tab Trigger:  _then
 
-     `promise.then(
-      function(result) {
-        console.log(result);
-      },
-      function(err) {
-        console.log(err);
-      }
-    );
-    ` 
+```js
+   promise.then(
+    function(result) {
+      console.log(result);
+    },
+    function(err) {
+      console.log(err);
+    }
+  );
+``` 
 
-              
+## jQuery snippets
 
-             
+#### $.ajax()
 
-    ## jQuery snippets
+##### Tab Trigger:  _$ajax
 
-              <!--ajax-->
-
-    #### $.ajax()
-
-    ##### Tab Trigger:  _$ajax
-
-     `
-      $.ajax({
-        url: '',
-        data: {}
-      })
-      .done(function ( data ) {
-        /* code ... */
-      })
-      .fail(function(jqXHR,textStatus){
-        /* code ... */
-      })
-      .always(function(jqXHR,textStatus){
-        /* code ... */
-      });
-    ` 
+   ```js
+    $.ajax({
+      url: '',
+      data: {}
+    })
+    .done(function ( data ) {
+      /* code ... */
+    })
+    .fail(function(jqXHR,textStatus){
+      /* code ... */
+    })
+    .always(function(jqXHR,textStatus){
+      /* code ... */
+    });
+  ``` 
 
               <!--document ready-->
 
