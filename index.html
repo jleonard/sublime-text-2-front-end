@@ -53,7 +53,8 @@
         /*background-color: #F0FFFF;*/
         padding: 10px;
         /*border: 1px solid #0EBFE9;*/
-        border-left-width: 10px;
+        /*border-left-width: 10px;*/
+        border-left: 10px solid #000;
         overflow-x: scroll;
       }
       h1,h2,h3,h4,h5,h6,p{
@@ -70,7 +71,8 @@
       }
       h2{
         font-size: 2em;
-        border-bottom: 1px solid #d6d6d6;
+        margin-top: 3em;
+        margin-left: -1.5em;
         padding-bottom: 10px;
       }
       h4{
@@ -358,6 +360,117 @@ promise.then(
   }
 );
 </code></pre>
+
+        </section>
+
+        <section>
+          <h2>jQuery snippets</h2>
+
+          <!--ajax-->
+          <h4>$.ajax()</h4>
+          <h5>_$ajax</h5>
+<pre><code>
+  $.ajax({
+    url: '',
+    data: {}
+  })
+  .done(function ( data ) {
+    /* code ... */
+  })
+  .fail(function(jqXHR,textStatus){
+    /* code ... */
+  })
+  .always(function(jqXHR,textStatus){
+    /* code ... */
+  });
+</code></pre>
+        
+          <!--document ready-->
+          <h4>$(document).ready()</h4>
+          <h5>_$dr</h5>
+<pre><code>
+$(document).ready(function(e){
+  /* code ... */
+});
+</code></pre>
+          
+          <!--function-->
+          <h4>$(function)</h4>
+          <h5>_$fn</h5>
+<pre><code>
+$(function() {
+  /* code ... */
+});
+</code></pre>
+
+          <!--on-->
+          <h4>$('.selector').on()</h4>
+          <h5>_$on</h5>
+<pre><code>
+$('selector').on('event', function(e){
+  /* code ... */
+});
+</code></pre>
+        
+        <!-- plugin -->
+        <h4>plugin boilerplate</h4>
+        <h5>_plugin</h5>
+<pre><code>
+(function($){
+
+  var ClassName = function (element, options){
+    
+    this.$element  = $(element);
+
+    // plugin options
+    this.options   = $.extend({}, ClassName.DEFAULTS, options);
+
+    var that = this;
+
+  };
+
+  ClassName.DEFAULTS = {};
+
+  var old = $.fn.pluginName;
+
+  $.fn.pluginName = function (option) {
+    return this.each(function () {
+      var $this   = $(this);
+      var data    = $this.data('pluginName');
+      var options = typeof option === 'object' && option;
+      if (!data){
+        $this.data('pluginName', (data = new ClassName(this, options)));
+      }
+    });
+  };
+
+  $.fn.pluginName.Constructor = ClassName;
+
+  $.fn.pluginName.noConflict = function() {
+    $.fn.pluginName = old;
+    return this;
+  };
+
+})(jQuery);
+</code></pre>
+
+        <h4>publish <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
+        <h5>_publish</h5>
+<pre><code>
+  $.publish('whatever.event.name',payload);
+</code></pre>
+        
+        <h4>subscribe <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
+        <h5>_subscribe</h5>
+ <pre><code>
+  function handlerFunction(){
+    return function(_,data){
+      console.log('subscribe ',data);
+    };
+  }
+  
+  $.subscribe('whatever.event.name',handlerFunction());
+</code></pre>       
 
         </section>
 
