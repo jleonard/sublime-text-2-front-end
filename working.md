@@ -2,8 +2,6 @@
 
 ## basic js
 
-          <!-- js comment -->
-
 #### Multiline comment
 
 ##### Tab Trigger:  _*
@@ -14,8 +12,6 @@
 */
 ```  
 
-          <!-- js comment -->
-
 #### console.log()
 
 ##### Tab Trigger:  _log
@@ -23,44 +19,41 @@
  
 ```js
 console.log();
-```  
-
-          <!-- for -->
+``` 
 
 #### for loop
 
 ##### Tab Trigger:  _for
 
  
-`var len = array.length;
+```js
+var len = array.length;
 for(var ii = 0; ii < len; ii++){
   var cur = array[ii];
   /* code ... */
 }
-`  
-
-          <!-- for in -->
+```  
 
 #### for-in loop
 
 ##### Tab Trigger:  _forin
 
  
-`for (var key in object){
+```js
+for (var key in object){
  if (object.hasOwnProperty(key)){
    var value = object[key];
  }
 }
-`  
-
-          <!-- google analytics -->
+```  
 
 #### Google Analytics
 
 ##### Tab Trigger:  _ga
 
  
-`var _gaq = _gaq || [];
+```js
+var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '${1:UA-XXXXX-X}']);
   _gaq.push(['_trackPageview']);
 
@@ -69,17 +62,16 @@ for(var ii = 0; ii < len; ii++){
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-`
+```
  
-
-          <!-- switch -->
 
 #### switch statement
 
 ##### Tab Trigger:  _switch
 
  
-`switch(var){
+```js
+switch(var){
   case :
     /* code ... */
   break;
@@ -90,26 +82,24 @@ for(var ii = 0; ii < len; ii++){
     /* code ... */
   break;
 }
-`  
-
-          <!-- terary -->
+``` 
 
 #### ternary statement
 
 ##### Tab Trigger:  _?
 
  
-`condition ? true : false;
-`  
-
-          <!-- try/catch -->
+```js
+condition ? true : false;
+```  
 
 #### try / catch / finally
 
 ##### Tab Trigger:  _try
 
  
-`try {
+```js
+try {
   /* code... */
 } 
 catch (e) {
@@ -118,30 +108,29 @@ catch (e) {
 finally (e) {
    /* code... */
 }
-`  
+```  
 
-          <!-- filter -->
 
 #### Array.filter()
 
 ##### Tab Trigger:  _filter
 
  
-`var filtered = array.filter(
+```js
+var filtered = array.filter(
     function(element){ 
       return true|false; 
     }
   );  
-`    
-
-          <!-- array filter -->
+```    
 
 #### Array.sort()
 
 ##### Tab Trigger:  _sort
 
  
-`items.sort(function (a, b) {
+```js
+items.sort(function (a, b) {
   if (${1:a > b}){
     return 1;
   }
@@ -151,43 +140,40 @@ finally (e) {
   // a must be equal to b
   return 0;
 });  
-`  
-
-          <!-- setTimeout -->
+```  
 
 #### setTimeout
 
 ##### Tab Trigger:  _timeout
 
  
-`setTimeout(function(){},delay);
-`  
-
-          <!-- function -->
+```js
+setTimeout(function(){},delay);
+```  
 
 #### named function
 
 ##### Tab Trigger:  _function
 
  
-`function method(arguments){
+```js
+function method(arguments){
   /* code ... */
 }
-`  
+```  
 
 ## advanced js
-
-          <!-- iife -->
 
 #### iife
 
 ##### Tab Trigger:  _iife
 
  
-`(function(){
+```js
+(function(){
   /* code */
 })();
-` 
+``` 
 
           <!-- class -->
 
