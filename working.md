@@ -402,67 +402,62 @@ function method(arguments){
 ##### Tab Trigger:  _html
 
   ```html
-     &lt;!DOCTYPE html&gt;
-    &lt;html&gt;
-      &lt;head&gt;
-        &lt;meta charset="utf-8"&gt;
-        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-        &lt;title>page&lt;/title&gt;
-        &lt;meta name="description" content=""&gt;
-        &lt;meta name="viewport" content="width=device-width"&gt;
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-        &lt;link rel="stylesheet" href=""&gt;
+    <link rel="stylesheet" href="">
 
-        &lt;/head&gt;
-        &lt;body&gt;
-          &lt;main&gt;
+    </head>
+    <body>
+      <main>
 
-          &lt;/main&gt;
-          &lt;script type="text/javascript" src=""&gt;&lt;/script&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
+      </main>
+      <script type="text/javascript" src=""></script>
+  </body>
+</html>
 ``` 
 
-              <!-- video -->
+#### video tag
 
-    #### video tag
+##### Tab Trigger:  _video
 
-    ##### Tab Trigger:  _video
-
-     `&lt;video 
-      controls preload="auto" width="640" height="264"
-      poster="PATH_TO_ASSETS.png"&gt;
-     &lt;source src="PATH_TO_ASSETS.mp4" type='video/mp4' /&gt;
-     &lt;source src="PATH_TO_ASSETS.webm" type='video/webm' /&gt;
-     &lt;source src="PATH_TO_ASSETS.ogv" type='video/ogg' /&gt;
-    &lt;/video&gt;
-    ` 
+     ```html
+<video controls preload="auto" width="640" height="264" poster="PATH_TO_ASSETS.png">
+ <source src="PATH_TO_ASSETS.mp4" type='video/mp4' />
+ <source src="PATH_TO_ASSETS.webm" type='video/webm' />
+ <source src="PATH_TO_ASSETS.ogv" type='video/ogg' />
+</video>
+``` 
 
               
 
              
 
-    ## css snippets
+## css snippets
 
-              <!-- breakpoints -->
 
     #### responsive breakpoint
 
     ##### Tab Trigger:  _breakpoint
 
-     `
-    @media all and (min-width: 50em) {
+```css
+@media all and (min-width: 50em) {
 
-    }
-    ` 
+}
+``` 
 
-            <!-- keyframes -->
 
-    #### animation @keyframes
+#### animation @keyframes
 
-    ##### Tab Trigger:  _keyframes
+##### Tab Trigger:  _keyframes
 
-     `
+```css
     @-webkit-keyframes ANIMATION_NAME {
       0%   {  }
       100% {  }
@@ -479,15 +474,13 @@ function method(arguments){
       0%   {  }
       100% {  }
     }
-     `
+```
 
-            <!-- css transition -->
+#### transition
 
-    #### transition
+##### Tab Trigger:  _transition
 
-    ##### Tab Trigger:  _transition
-
-     `
+```css
     -webkit-transition-property: all;
     transition-property: all;
 
@@ -499,40 +492,37 @@ function method(arguments){
 
     -webkit-transition-delay: 500ms;
     transition-delay: 500ms;
-    ` 
+``` 
 
               
 
              
 
-    ## regular expression snippets
+## regular expression snippets
 
-              <!-- alphanumeric -->
+#### alphanumeric
 
-    #### alphanumeric
+##### Tab Trigger:  _regex_alphanumeric
 
-    ##### Tab Trigger:  _regex_alphanumeric
-
-     `/^[0-9a-zA-Z]+$/
-    ` 
-
-              <!-- email -->
+     ```js
+     /^[0-9a-zA-Z]+$/
+    ``` 
 
     #### email
 
     ##### Tab Trigger:  _regex_email
 
-     `/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
-    ` 
-
-              <!-- url -->
+     ```js
+     /^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+    ``` 
 
     #### url
 
     ##### Tab Trigger:  _regex_url
 
-     `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
-    ` 
+     ```js
+     /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+    ``` 
 
               
 
@@ -540,14 +530,14 @@ function method(arguments){
 
     ## misc. snippets
 
-              <!-- gitignore -->
 
     #### .gitignore
 
     ##### Tab Trigger:  _gitignore
 
      
-    `# osx noise
+    ```bash
+    # osx noise
     .DS_Store
 
     # svn & cvs
@@ -559,7 +549,4 @@ function method(arguments){
     bower_components
 
     # project specific
-
-          
-
-      </main
+    ```
