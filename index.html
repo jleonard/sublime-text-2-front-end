@@ -28,7 +28,7 @@
         background-color: #222;
         min-width: 30%;
         padding: 40px;
-        position: absolute;
+        position: fixed;
         top: 0;
         height: 100%;
       }
@@ -46,6 +46,7 @@
       aside a.H4{
         margin-left: 1em;
         color: #d6d6d6;
+        display: block;
       }
       pre{
         background-color: #1d1f21;
@@ -75,7 +76,14 @@
       h4{
         border-top: 1px dashed #222;
         padding-top: 10px;
+        margin: 10px 0;
         font-size: 1.5em;
+      }
+      h5{
+        background-color: rgb(244,253,114);
+        padding: 8px;
+        display:inline-block;
+        margin: 0;
       }
       h5:before{
         display: inline-block;
@@ -85,6 +93,10 @@
       }
       h6{
         margin-bottom: 0px;
+        color: #afafaf;
+      }
+      .H2.on,.H3.on{
+        color: rgb(244,253,114);
       }
     </style>
 
@@ -100,10 +112,8 @@
         </section>
 
         <section>
-          <h2>javascript snippets</h2>
+          <h2>basic js</h2>
           
-          <h3>basic js</h3>
-
           <!-- js comment -->
           <h4>Multiline comment</h4>
           <h5>_*</h5>
@@ -242,7 +252,7 @@ finally (e) {
 </code></pre> 
 
 
-          <h3>advanced js</h3>
+          <h2>advanced js</h2>
 
           <!-- iife -->
           <h4>iife</h4>
@@ -497,27 +507,44 @@ bower_components
       <script src="bower_components/jquery/dist/jquery.min.js"></script>
       <script src="bower_components/highlightjs/highlight.pack.js"></script>
       <script>
+
+        var id = randomString(8);
+        function randomString(length) {
+          var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          var result = '';
+          for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+          return result;
+        }
         var $sidebar;
         $(document).ready(function(e){
+          
           $sidebar = $('aside');
           
           $('section').each(function(i,e){
             $(this).children('h1,h2,h3,h4').each(function(){
+              if(this.tagName === 'H3' || this.tagName === 'H2'){
+                id = randomString(8);
+              }
               $(this).before("<a name='"+$(this).text()+"'></a>");
-              $sidebar.append('<a class="'+this.tagName+'" href="#'+$(this).text()+'">'+$(this).text()+'</a>');
+              $sidebar.append('<a data-id="'+id+'" class="'+this.tagName+'" href="#'+$(this).text()+'">'+$(this).text()+'</a>');
             });
-            /*
-            $(this).children('h2').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            $(this).children('h3').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            $(this).children('h4').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            */
+            
           });
+
+          $('.H4').hide();
+
+          $('.H2,.H3').on('click',function(e){
+            
+            $('.H2,.H3').not(this).removeClass('on');
+            $(this).toggleClass('on');
+
+            $('.H4[data-id="'+$(this).attr('data-id')+'"]').toggle();
+            $('.H4[data-id!="'+$(this).attr('data-id')+'"]').hide();
+
+            
+          });
+
+          $('.H2').first().trigger('click');
 
           //$('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
