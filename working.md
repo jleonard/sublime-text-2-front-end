@@ -427,17 +427,14 @@ function method(arguments){
 
 ##### Tab Trigger:  _video
 
-     ```html
+```html
 <video controls preload="auto" width="640" height="264" poster="PATH_TO_ASSETS.png">
  <source src="PATH_TO_ASSETS.mp4" type='video/mp4' />
  <source src="PATH_TO_ASSETS.webm" type='video/webm' />
  <source src="PATH_TO_ASSETS.ogv" type='video/ogg' />
 </video>
 ``` 
-
-              
-
-             
+        
 
 ## css snippets
 
