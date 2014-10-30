@@ -330,8 +330,8 @@ function method(arguments){
 
 ##### Tab Trigger:  _plugin
 
-     ```js
-    (function($){
+```js
+   (function($){
 
       var ClassName = function (element, options){
 
@@ -367,7 +367,7 @@ function method(arguments){
       };
 
     })(jQuery);
-    ``` 
+ ``` 
 
 #### publish [(tiny pub/sub)](https://github.com/cowboy/jquery-tiny-pubsub)
 
