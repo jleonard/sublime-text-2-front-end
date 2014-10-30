@@ -326,9 +326,9 @@ function method(arguments){
     });
     ```
 
-#### plugin boilerplate
+#### jQuery Plugin boilerplate
 
-    ##### Tab Trigger:  _plugin
+##### Tab Trigger:  _plugin
 
      ```js
     (function($){
