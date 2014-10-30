@@ -326,7 +326,7 @@ function method(arguments){
     });
     ```
 
-    #### plugin boilerplate
+#### plugin boilerplate
 
     ##### Tab Trigger:  _plugin
 
