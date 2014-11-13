@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<script src="$1"></script>
+<script title="${2:This script does x}" src="$1"></script>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>_script</tabTrigger>

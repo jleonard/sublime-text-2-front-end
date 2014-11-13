@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_$cdn</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>
