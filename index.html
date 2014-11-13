@@ -28,7 +28,7 @@
         background-color: #222;
         min-width: 30%;
         padding: 40px;
-        position: absolute;
+        position: fixed;
         top: 0;
         height: 100%;
       }
@@ -46,13 +46,15 @@
       aside a.H4{
         margin-left: 1em;
         color: #d6d6d6;
+        display: block;
       }
       pre{
         background-color: #1d1f21;
         /*background-color: #F0FFFF;*/
         padding: 10px;
         /*border: 1px solid #0EBFE9;*/
-        border-left-width: 10px;
+        /*border-left-width: 10px;*/
+        border-left: 10px solid #000;
         overflow-x: scroll;
       }
       h1,h2,h3,h4,h5,h6,p{
@@ -69,13 +71,21 @@
       }
       h2{
         font-size: 2em;
-        border-bottom: 1px solid #d6d6d6;
+        margin-top: 3em;
+        margin-left: -1.5em;
         padding-bottom: 10px;
       }
       h4{
         border-top: 1px dashed #222;
         padding-top: 10px;
+        margin: 10px 0;
         font-size: 1.5em;
+      }
+      h5{
+        background-color: rgb(244,253,114);
+        padding: 8px;
+        display:inline-block;
+        margin: 0;
       }
       h5:before{
         display: inline-block;
@@ -85,6 +95,10 @@
       }
       h6{
         margin-bottom: 0px;
+        color: #afafaf;
+      }
+      .H2.on,.H3.on{
+        color: rgb(244,253,114);
       }
     </style>
 
@@ -100,10 +114,8 @@
         </section>
 
         <section>
-          <h2>javascript snippets</h2>
+          <h2>basic js</h2>
           
-          <h3>basic js</h3>
-
           <!-- js comment -->
           <h4>Multiline comment</h4>
           <h5>_*</h5>
@@ -130,7 +142,20 @@ for(var ii = 0; ii < len; ii++){
   /* code ... */
 }
 </code></pre> 
-          
+        
+
+          <!-- for in -->
+          <h4>for-in loop</h4>
+          <h5>_forin</h5>
+<pre>
+<code>for (var key in object){
+ if (object.hasOwnProperty(key)){
+   var value = object[key];
+ }
+}
+</code></pre> 
+
+
           <!-- google analytics -->
           <h4>Google Analytics</h4>
           <h5>_ga</h5>
@@ -146,20 +171,9 @@ for(var ii = 0; ii < len; ii++){
   })();
 </code>
 </pre>
-
-          <!-- for in -->
-          <h4>for-in loop</h4>
-          <h5>_forin</h5>
-<pre>
-<code>for (var key in object){
- if (object.hasOwnProperty(key)){
-   var value = object[key];
- }
-}
-</code></pre> 
           
           <!-- switch -->
-          <h4>switch statement</h4>
+          <h4>switch</h4>
           <h5>_switch</h5>
 <pre>
 <code>switch(var){
@@ -176,7 +190,7 @@ for(var ii = 0; ii < len; ii++){
 </code></pre> 
           
           <!-- terary -->
-          <h4>ternary statement</h4>
+          <h4>ternary operator</h4>
           <h5>_?</h5>
 <pre>
 <code>condition ? true : false;
@@ -242,10 +256,10 @@ finally (e) {
 </code></pre> 
 
 
-          <h3>advanced js</h3>
+          <h2>advanced js</h2>
 
           <!-- iife -->
-          <h4>iife</h4>
+          <h4><a target="_blank" href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">iife</a></h4>
           <h5>_iife</h5>
 <pre>
 <code>(function(){
@@ -350,6 +364,117 @@ promise.then(
         </section>
 
         <section>
+          <h2>jQuery snippets</h2>
+
+          <!--ajax-->
+          <h4>$.ajax()</h4>
+          <h5>_$ajax</h5>
+<pre><code>
+  $.ajax({
+    url: '',
+    data: {}
+  })
+  .done(function ( data ) {
+    /* code ... */
+  })
+  .fail(function(jqXHR,textStatus){
+    /* code ... */
+  })
+  .always(function(jqXHR,textStatus){
+    /* code ... */
+  });
+</code></pre>
+        
+          <!--document ready-->
+          <h4>$(document).ready()</h4>
+          <h5>_$dr</h5>
+<pre><code>
+$(document).ready(function(e){
+  /* code ... */
+});
+</code></pre>
+          
+          <!--function-->
+          <h4>$(function)</h4>
+          <h5>_$fn</h5>
+<pre><code>
+$(function() {
+  /* code ... */
+});
+</code></pre>
+
+          <!--on-->
+          <h4>$('.selector').on()</h4>
+          <h5>_$on</h5>
+<pre><code>
+$('selector').on('event', function(e){
+  /* code ... */
+});
+</code></pre>
+        
+        <!-- plugin -->
+        <h4>jQuery plugin boilerplate</h4>
+        <h5>_plugin</h5>
+<pre><code>
+(function($){
+
+  var ClassName = function (element, options){
+    
+    this.$element  = $(element);
+
+    // plugin options
+    this.options   = $.extend({}, ClassName.DEFAULTS, options);
+
+    var that = this;
+
+  };
+
+  ClassName.DEFAULTS = {};
+
+  var old = $.fn.pluginName;
+
+  $.fn.pluginName = function (option) {
+    return this.each(function () {
+      var $this   = $(this);
+      var data    = $this.data('pluginName');
+      var options = typeof option === 'object' && option;
+      if (!data){
+        $this.data('pluginName', (data = new ClassName(this, options)));
+      }
+    });
+  };
+
+  $.fn.pluginName.Constructor = ClassName;
+
+  $.fn.pluginName.noConflict = function() {
+    $.fn.pluginName = old;
+    return this;
+  };
+
+})(jQuery);
+</code></pre>
+
+        <h4>publish <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
+        <h5>_publish</h5>
+<pre><code>
+  $.publish('whatever.event.name',payload);
+</code></pre>
+        
+        <h4>subscribe <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
+        <h5>_subscribe</h5>
+ <pre><code>
+  function handlerFunction(){
+    return function(_,data){
+      console.log('subscribe ',data);
+    };
+  }
+  
+  $.subscribe('whatever.event.name',handlerFunction());
+</code></pre>       
+
+        </section>
+
+        <section>
           <h2>html snippets</h2>
 
           <!-- html -->
@@ -407,6 +532,60 @@ promise.then(
         </section>
 
         <section>
+          <h2>css snippets</h2>
+
+          <!-- breakpoints -->
+          <h4>responsive breakpoint</h4>
+          <h5>_breakpoint</h5>
+<pre><code>
+@media all and (min-width: 50em) {
+  
+}
+</code></pre>
+          
+        <!-- keyframes -->
+        <h4>animation @keyframes</h4>
+        <h5>_keyframes</h5>
+
+<pre><code>
+@-webkit-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@-moz-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@-o-keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+@keyframes ANIMATION_NAME {
+  0%   {  }
+  100% {  }
+}
+</pre></code>
+
+        <!-- css transition -->
+        <h4>transition</h4>
+        <h5>_transition</h5>
+<pre><code>
+-webkit-transition-property: all;
+transition-property: all;
+
+-webkit-transition-duration: 750ms;
+transition-duration: 750ms;
+
+-webkit-transition-timing-function: ease-in;
+transition-timing-function: ease-in;
+
+-webkit-transition-delay: 500ms;
+transition-delay: 500ms;
+</code></pre>
+        
+        </section>
+
+        <section>
           <h2>regular expression snippets</h2>
 
           <!-- alphanumeric -->
@@ -457,28 +636,44 @@ bower_components
       <script src="bower_components/jquery/dist/jquery.min.js"></script>
       <script src="bower_components/highlightjs/highlight.pack.js"></script>
       <script>
+
+        var id = randomString(8);
+        function randomString(length) {
+          var chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          var result = '';
+          for (var i = length; i > 0; --i) result += chars[Math.round(Math.random() * (chars.length - 1))];
+          return result;
+        }
         var $sidebar;
         $(document).ready(function(e){
+          
           $sidebar = $('aside');
           
-          console.log($('main').height());
           $('section').each(function(i,e){
             $(this).children('h1,h2,h3,h4').each(function(){
+              if(this.tagName === 'H3' || this.tagName === 'H2'){
+                id = randomString(8);
+              }
               $(this).before("<a name='"+$(this).text()+"'></a>");
-              $sidebar.append('<a class="'+this.tagName+'" href="#'+$(this).text()+'">'+$(this).text()+'</a>');
+              $sidebar.append('<a data-id="'+id+'" class="'+this.tagName+'" href="#'+$(this).text()+'">'+$(this).text()+'</a>');
             });
-            /*
-            $(this).children('h2').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            $(this).children('h3').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            $(this).children('h4').each(function(){
-              $sidebar.append('<a href="">'+$(this).text()+'</a>');
-            });
-            */
+            
           });
+
+          $('.H4').hide();
+
+          $('.H2,.H3').on('click',function(e){
+            
+            $('.H2,.H3').not(this).removeClass('on');
+            $(this).toggleClass('on');
+
+            $('.H4[data-id="'+$(this).attr('data-id')+'"]').toggle();
+            $('.H4[data-id!="'+$(this).attr('data-id')+'"]').hide();
+
+            
+          });
+
+          $('.H2').first().trigger('click');
 
           //$('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
