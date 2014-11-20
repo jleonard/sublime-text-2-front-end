@@ -1,5 +1,7 @@
 # Front End Snippets For Sublime Text
 
+> These docs are old. (Use these)[http://jleonard.github.io/sublime-text-2-front-end/]
+
 ## basic js
 
 #### Multiline comment
