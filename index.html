@@ -218,7 +218,7 @@ finally (e) {
           <!-- filter -->
           <h4>Array.filter()</h4>
           <h5>_filter</h5>
-<pre>
+<pre class='language-javascript'>
 <code>var filtered = array.filter(
     function(element){ 
       return true|false; 
@@ -229,7 +229,7 @@ finally (e) {
           <!-- array filter -->
           <h4>Array.sort()</h4>
           <h5>_sort</h5>
-<pre>
+<pre class='language-javascript'>
 <code>items.sort(function (a, b) {
   if (${1:a > b}){
     return 1;
@@ -245,7 +245,7 @@ finally (e) {
           <!-- setTimeout -->
           <h4>setTimeout</h4>
           <h5>_timeout</h5>
-<pre>
+<pre class='language-javascript'>
 <code>setTimeout(function(){},delay);
 </code></pre> 
 
@@ -253,7 +253,7 @@ finally (e) {
           <!-- function -->
           <h4>named function</h4>
           <h5>_function</h5>
-<pre>
+<pre class='language-javascript'>
 <code>function method(arguments){
   /* code ... */
 }
@@ -262,7 +262,7 @@ finally (e) {
           <!-- DomContentLoaded -->
           <h4>DOMContentLoaded Event</h4>
           <h5>_DOMContentLoaded</h5>
-<pre>
+<pre class='language-javascript'>
 <code>document.addEventListener('DOMContentLoaded', function(){
   //code
 });
@@ -271,7 +271,7 @@ finally (e) {
           <!-- querySelectorAll -->
           <h4>querySelectorAll pattern</h4>
           <h5>_querySelectorAll</h5>
-<pre>
+<pre class='language-javascript'>
 <code>
 var elements = document.querySelectorAll('selector');
 Array.prototype.forEach.call(elementse, function(el, i){
@@ -285,7 +285,7 @@ Array.prototype.forEach.call(elementse, function(el, i){
           <!-- iife -->
           <h4><a target="_blank" href="http://benalman.com/news/2010/11/immediately-invoked-function-expression/">iife</a></h4>
           <h5>_iife</h5>
-<pre>
+<pre class='language-javascript'>
 <code>(function(){
   /* code */
 })();
@@ -294,7 +294,7 @@ Array.prototype.forEach.call(elementse, function(el, i){
           <!-- class -->
           <h4>Class</h4>
           <h5>_class</h5>
-<pre><code>function ClassName (param) {
+<pre class='language-javascript'><code>function ClassName (param) {
 
   this.publicVar = 'foo';
   var privateVar = 'bar';
@@ -325,7 +325,7 @@ ClassName.prototype.publicMethod = function() {};
           <h4>Singleton</h4>
           <h5>_singleton</h5>
 
-<pre><code>var ClassName;
+<pre class='language-javascript'><code>var ClassName;
 (function() {
     var instance;
 
@@ -346,7 +346,7 @@ ClassName.prototype.publicMethod = function() {};
           <h4>Promise</h4>
           <h5>_promise</h5>
 
-<pre><code>var promise = new Promise(function(resolve, reject) {
+<pre class='language-javascript'><code>var promise = new Promise(function(resolve, reject) {
   
   var success;
 
@@ -375,7 +375,7 @@ promise.then(
           <h4>Promise (then)</h4>
           <h5>_then</h5>
 
-<pre><code>promise.then(
+<pre class='language-javascript'><code>promise.then(
   function(result) {
     console.log(result);
   },
@@ -393,7 +393,7 @@ promise.then(
           <!--ajax-->
           <h4>$.ajax()</h4>
           <h5>_$ajax</h5>
-<pre><code>
+<pre class='language-javascript'><code>
   $.ajax({
     url: '',
     data: {}
@@ -412,7 +412,7 @@ promise.then(
           <!--document ready-->
           <h4>$(document).ready()</h4>
           <h5>_$dr</h5>
-<pre><code>
+<pre class='language-javascript'><code>
 $(document).ready(function(e){
   /* code ... */
 });
@@ -421,7 +421,7 @@ $(document).ready(function(e){
           <!--function-->
           <h4>$(function)</h4>
           <h5>_$fn</h5>
-<pre><code>
+<pre class='language-javascript'><code>
 $(function() {
   /* code ... */
 });
@@ -430,7 +430,7 @@ $(function() {
           <!--on-->
           <h4>$('.selector').on()</h4>
           <h5>_$on</h5>
-<pre><code>
+<pre class='language-javascript'><code>
 $('selector').on('event', function(e){
   /* code ... */
 });
@@ -439,7 +439,7 @@ $('selector').on('event', function(e){
         <!-- plugin -->
         <h4>jQuery plugin boilerplate</h4>
         <h5>_plugin</h5>
-<pre><code>
+<pre class='language-javascript'><code>
 (function($){
 
   var ClassName = function (element, options){
@@ -480,13 +480,13 @@ $('selector').on('event', function(e){
 
         <h4>publish <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
         <h5>_publish</h5>
-<pre><code>
+<pre class='language-javascript'><code>
   $.publish('whatever.event.name',payload);
 </code></pre>
         
         <h4>subscribe <a target="_blank" href='https://github.com/cowboy/jquery-tiny-pubsub'>(tiny pub/sub)</a></h4>
         <h5>_subscribe</h5>
- <pre><code>
+ <pre class='language-javascript'><code>
   function handlerFunction(){
     return function(_,data){
       console.log('subscribe ',data);
@@ -561,7 +561,7 @@ $('selector').on('event', function(e){
           <!-- breakpoints -->
           <h4>responsive breakpoint</h4>
           <h5>_breakpoint</h5>
-<pre><code>
+<pre class='language-css'><code>
 @media all and (min-width: 50em) {
   
 }
@@ -571,7 +571,7 @@ $('selector').on('event', function(e){
         <h4>animation @keyframes</h4>
         <h5>_keyframes</h5>
 
-<pre><code>
+<pre class='language-css'><code>
 @-webkit-keyframes ANIMATION_NAME {
   0%   {  }
   100% {  }
@@ -593,7 +593,7 @@ $('selector').on('event', function(e){
         <!-- css transition -->
         <h4>transition</h4>
         <h5>_transition</h5>
-<pre><code>
+<pre class='language-css'><code>
 -webkit-transition-property: all;
 transition-property: all;
 
@@ -615,19 +615,19 @@ transition-delay: 500ms;
           <!-- alphanumeric -->
           <h4>alphanumeric</h4>
           <h5>_regex_alphanumeric</h5>
-<pre><code>/^[0-9a-zA-Z]+$/
+<pre class='language-javascript'><code>/^[0-9a-zA-Z]+$/
 </code></pre>
 
           <!-- email -->
           <h4>email</h4>
           <h5>_regex_email</h5>
-<pre><code>/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
+<pre class='language-javascript'><code>/^\s*[\w\-\+_]+(\.[\w\-\+_]+)*\@[\w\-\+_]+\.[\w\-\+_]+(\.[\w\-\+_]+)*\s*$/;
 </code></pre>
 
           <!-- url -->
           <h4>url</h4>
           <h5>_regex_url</h5>
-<pre><code>/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
+<pre class='language-javascript'><code>/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/
 </code></pre>
 
         </section>
@@ -639,7 +639,7 @@ transition-delay: 500ms;
           <!-- gitignore -->
           <h4>.gitignore</h4>
           <h5>_gitignore</h5>
-<pre>
+<pre class='language-javascript'>
 <code># osx noise
 .DS_Store
 
