@@ -9,7 +9,11 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 
+    <!--
     <link rel='stylesheet' type='text/css' href='bower_components/highlightjs/styles/tomorrow-night.css'>
+    -->
+
+    <link href="assets/css/prism.css" media="all" rel="stylesheet" type="text/css">
 
     <style>
       *{
@@ -119,7 +123,7 @@
           <!-- js comment -->
           <h4>Multiline comment</h4>
           <h5>_*</h5>
-<pre>
+<pre class='language-javascript'>
 <code>/*
 * message
 */
@@ -128,14 +132,14 @@
           <!-- js comment -->
           <h4>console.log()</h4>
           <h5>_log</h5>
-<pre>
+<pre class='language-javascript'>
 <code>console.log();
 </code></pre> 
 
           <!-- for -->
           <h4>for loop</h4>
           <h5>_for</h5>
-<pre>
+<pre class='language-javascript'>
 <code>var len = array.length;
 for(var ii = 0; ii < len; ii++){
   var cur = array[ii];
@@ -147,7 +151,7 @@ for(var ii = 0; ii < len; ii++){
           <!-- for in -->
           <h4>for-in loop</h4>
           <h5>_forin</h5>
-<pre>
+<pre class='language-javascript'>
 <code>for (var key in object){
  if (object.hasOwnProperty(key)){
    var value = object[key];
@@ -159,7 +163,7 @@ for(var ii = 0; ii < len; ii++){
           <!-- google analytics -->
           <h4>Google Analytics</h4>
           <h5>_ga</h5>
-<pre>
+<pre class='language-javascript'>
 <code>var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '${1:UA-XXXXX-X}']);
   _gaq.push(['_trackPageview']);
@@ -175,7 +179,7 @@ for(var ii = 0; ii < len; ii++){
           <!-- switch -->
           <h4>switch</h4>
           <h5>_switch</h5>
-<pre>
+<pre class='language-javascript'>
 <code>switch(var){
   case :
     /* code ... */
@@ -192,14 +196,14 @@ for(var ii = 0; ii < len; ii++){
           <!-- terary -->
           <h4>ternary operator</h4>
           <h5>_?</h5>
-<pre>
+<pre class='language-javascript'>
 <code>condition ? true : false;
 </code></pre> 
 
           <!-- try/catch -->
           <h4>try / catch / finally</h4>
           <h5>_try</h5>
-<pre>
+<pre class='language-javascript'>
 <code>try {
   /* code... */
 } 
@@ -501,7 +505,7 @@ $('selector').on('event', function(e){
           <h4>.html page</h4>
           <h5>_html</h5>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre class='language-markup'><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;meta charset="utf-8"&gt;
@@ -526,21 +530,21 @@ $('selector').on('event', function(e){
           <h4>script tag</h4>
           <h5>_script</h5>
 
-<pre><code>&lt;script title="Description of the script" src="path/to/script.js"&gt;&lt;/script&gt;
+<pre class='language-markup'><code>&lt;script title="Description of the script" src="path/to/script.js"&gt;&lt;/script&gt;
 </code></pre>
             
           <!-- jquery cdn -->
           <h4>jQuery cdn script tag</h4>
           <h5>_$cdn</h5>
 
-<pre><code>&lt;script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
+<pre class='language-markup'><code>&lt;script title="jQuery from the CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"&gt;&lt;/script&gt;
 </code></pre>
         
           <!-- video -->
           <h4>video tag</h4>
           <h5>_video</h5>
 
-<pre><code>&lt;video 
+<pre class='language-markup'><code>&lt;video 
   controls preload="auto" width="640" height="264"
   poster="PATH_TO_ASSETS.png"&gt;
  &lt;source src="PATH_TO_ASSETS.mp4" type='video/mp4' /&gt;
@@ -654,7 +658,11 @@ bower_components
 
       </main>
       <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script title="syntax highlighting" src="assets/js/prism.js"></script>
+
+      <!--
       <script src="bower_components/highlightjs/highlight.pack.js"></script>
+      -->
       <script>
 
         var id = randomString(8);
@@ -695,12 +703,11 @@ bower_components
 
           $('.H2').first().trigger('click');
 
-          //$('h5').before('<h6>Tab Trigger</h6>');
           $('pre').before('<h6>Result</h6>');
 
           $sidebar.height($('main').outerHeight());
         });
-        hljs.initHighlightingOnLoad();
+        //hljs.initHighlightingOnLoad();
       </script>
   </body>
 </html>
