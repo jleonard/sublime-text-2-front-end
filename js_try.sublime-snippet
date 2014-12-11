@@ -2,11 +2,9 @@
 	<content><![CDATA[
 try {
   ${1:/* code... */}
-} 
-catch (e) {
+}catch (e) {
    ${2:/* code... */}
-}
-finally (e) {
+}finally (e) {
    ${3:/* code... */}
 }
 ]]></content>
