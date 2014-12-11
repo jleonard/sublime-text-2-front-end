@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+try{
+	${1:// code...}
+}catch(e){
+	${2:// code...}
+	$exceptionHandler(e);
+}finally(e){
+	${3:// code...}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ng_try</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger 
+	<scope>source.html</scope>
+    -->
+</snippet>
