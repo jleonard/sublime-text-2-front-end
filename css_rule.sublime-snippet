@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+${1:selector}{
+  ${2:property} : ${3:value};
+}
+]]></content>
+  <tabTrigger>_rule</tabTrigger>
+</snippet>
