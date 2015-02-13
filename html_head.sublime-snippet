@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>${1:page}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  ${2}
+</head>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_head</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>

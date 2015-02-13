@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+<${1:tag} ${2:attribute}='${3:value}'>
+  ${4:content}
+</${1}>
+]]></content>
+  <tabTrigger>_tag</tabTrigger>
+</snippet>

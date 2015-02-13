@@ -8,15 +8,13 @@
     <title>${1:page}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-
     <link rel="stylesheet" href="${2}">
-
-    </head>
-    <body>
-      <main>
-        ${3}
-      </main>
-      <script type="text/javascript" src="${4}"></script>
+  </head>
+  <body>
+    <main>
+      ${3}
+    </main>
+    <script type="text/javascript" src="${4}"></script>
   </body>
 </html>
 ]]></content>
