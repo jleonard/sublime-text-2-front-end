@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[
+<div class="col-md-${1:6}">${2}</div>
+]]></content>
+  <tabTrigger>_bootstrap_column</tabTrigger>
+</snippet>

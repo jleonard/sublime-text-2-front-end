@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[
+<div class="alert alert-${1:info}" ${2:alert-dismissible} role="alert">${3:Alert message}</div>
+]]></content>
+  <tabTrigger>_bootstrap_alert</tabTrigger>
+</snippet>
