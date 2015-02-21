@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[
+<span class="glyphicon glyphicon-${1:search}" aria-hidden="true"></span>
+]]></content>
+  <tabTrigger>_bootstrap_icon</tabTrigger>
+</snippet>

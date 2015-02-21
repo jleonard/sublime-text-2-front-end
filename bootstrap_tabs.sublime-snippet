@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">Tab One</a></li>
+    <li role="presentation"><a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">Tab Two</a></li>
+    <li role="presentation"><a href="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">Tab Three</a></li>
+    <li role="presentation"><a href="#tab-four" aria-controls="tab-four" role="tab" data-toggle="tab">Tab Four</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tab-one">Tab One Content</div>
+    <div role="tabpanel" class="tab-pane" id="tab-two">Tab Two Content</div>
+    <div role="tabpanel" class="tab-pane" id="tab-three">Tab Three Content</div>
+    <div role="tabpanel" class="tab-pane" id="tab-four">Tab Four Content</div>
+  </div>
+
+</div>
+]]></content>
+  <tabTrigger>_bootstrap_tabs</tabTrigger>
+</snippet>
