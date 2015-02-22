@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[
+<marquee>${2}/marquee>
+]]></content>
+  <tabTrigger>_marquee</tabTrigger>
+</snippet>
