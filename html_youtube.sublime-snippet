@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+<iframe width="560" height="315" src="https://www.youtube.com/embed/${1:4mEbABPtTv8}" frameborder="0" allowfullscreen></iframe>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>_youtube</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger 
+  <scope>source.html</scope>
+    -->
+</snippet>
