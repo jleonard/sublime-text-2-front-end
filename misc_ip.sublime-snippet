@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+ipconfig getifaddr en0
+]]></content>
+	<tabTrigger>_ip</tabTrigger>
+</snippet>
