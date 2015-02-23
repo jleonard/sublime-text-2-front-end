@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<audio src="${1:file}" ${2:autoplay} ${3:loop} ${4:controls}></audio>
+]]></content>
+	<tabTrigger>_audio</tabTrigger>
+</snippet>
