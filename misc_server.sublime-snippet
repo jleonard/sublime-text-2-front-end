@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+python -m SimpleHTTPServer 8080
+]]></content>
+	<tabTrigger>_server</tabTrigger>
+</snippet>
