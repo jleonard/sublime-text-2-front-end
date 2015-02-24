@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<img src="${1}" alt="${2}" >
+<img src="${1:http://placekitten.com/200/300}" alt="${2}" >
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>_img</tabTrigger>
