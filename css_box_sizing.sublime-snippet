@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+*,*:before,*:after{
+  box-sizing: border-box;
+}
+]]></content>
+  <tabTrigger>_box_sizing</tabTrigger>
+</snippet>
