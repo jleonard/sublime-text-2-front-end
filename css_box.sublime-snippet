@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+${1:selector}{
+  border: ${4:2px solid red};
+  border-radius: ${5:4px};
+  margin : ${2:10px 10px 10px 10x};
+  padding : ${3:20px 20px 20px 20px};
+}
+]]></content>
+  <tabTrigger>_box_model</tabTrigger>
+</snippet>
