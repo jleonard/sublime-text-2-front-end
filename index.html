@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">-->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
     <link href="assets/css/prism.css" media="all" rel="stylesheet" type="text/css">
     <link href="assets/css/docs.css" media="all" rel="stylesheet" type="text/css">
@@ -492,6 +492,37 @@ $('selector').on('event', function(e){
         <section>
           <h2>bootstrap html snippets</h2>
 
+          <!-- bootstrap alert -->
+          <h4>Bootstrap Alert</h4>
+          <h5>_bootstrap_alert</h5>
+<pre class='language-markup'><code>
+&lt;div class="alert alert-info" alert-dismissible role="alert"&gt;Alert message&lt;/div&gt;
+</code></pre>
+          
+          <!-- bootstrap button -->
+          <h4>Bootstrap Button</h4>
+          <h5>_bootstrap_button</h5>
+<pre class='language-markup'><code>
+&lt;button type="button" class="btn btn-default"&gt;Label&lt;/button&gt;
+</code></pre>
+
+          <!-- bootstrap dropdown -->
+          <h4>Bootstrap Dropdown</h4>
+          <h5>_bootstrap_dropdown</h5>
+<pre class='language-markup'><code>
+&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"&gt;
+    Dropdown
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"&gt;
+    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
           <!-- bootstrap grid -->
           <h4>Bootstrap Grid</h4>
           <h5>_bootstrap_grid</h5>
@@ -511,34 +542,137 @@ $('selector').on('event', function(e){
 &lt;div class="col-md-6"&gt;&lt;/div&gt;
 </code></pre>
 
-          <!-- bootstrap button -->
-          <h4>Bootstrap Button</h4>
-          <h5>_bootstrap_button</h5>
+          <!-- bootstrap column -->
+          <h4>Bootstrap Icon</h4>
+          <h5>_bootstrap_icon</h5>
 <pre class='language-markup'><code>
-&lt;button type="button" class="btn btn-default"&gt;Label&lt;/button&gt;
+&lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;&lt;/span&gt;
 </code></pre>
 
-          <!-- bootstrap alert -->
-          <h4>Bootstrap Alert</h4>
-          <h5>_bootstrap_alert</h5>
+          <!-- bootstrap jumbotron -->
+          <h4>Bootstrap Jumbotron</h4>
+          <h5>_bootstrap_jumbotron</h5>
 <pre class='language-markup'><code>
-&lt;div class="alert alert-info" alert-dismissible role="alert"&gt;Alert message&lt;/div&gt;
+&lt;div class="jumbotron"&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;p&gt;...&lt;/p&gt;
+  &lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt; 
 </code></pre>
 
-          <!-- bootstrap dropdown -->
-          <h4>Bootstrap Dropdown</h4>
-          <h5>_bootstrap_dropdown</h5>
+          <!-- bootstrap navbar -->
+          <h4>Bootstrap Navbar</h4>
+          <h5>_bootstrap_navbar</h5>
 <pre class='language-markup'><code>
-&lt;div class="dropdown"&gt;
-  &lt;button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true"&gt;
-    Dropdown
-    &lt;span class="caret"&gt;&lt;/span&gt;
-  &lt;/button&gt;
-  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
-    &lt;li role="presentation"&gt;&lt;a role="menuitem" tabindex="-1" href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+&lt;nav class="navbar navbar-default"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"&gt;
+        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+    &lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+      &lt;ul class="nav navbar-nav"&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Link &lt;span class="sr-only"&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"&gt;Dropdown &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;form class="navbar-form navbar-left" role="search"&gt;
+        &lt;div class="form-group"&gt;
+          &lt;input type="text" class="form-control" placeholder="Search"&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+      &lt;/form&gt;
+      &lt;ul class="nav navbar-nav navbar-right"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="dropdown"&gt;
+          &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"&gt;Dropdown &lt;span class="caret"&gt;&lt;/span&gt;&lt;/a&gt;
+          &lt;ul class="dropdown-menu" role="menu"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="divider"&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+  &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt; 
+</code></pre>
+
+          <!-- bootstrap jumbotron -->
+          <h4>Bootstrap Pagination</h4>
+          <h5>_bootstrap_pagination</h5>
+<pre class='language-markup'><code>
+&lt;nav&gt;
+  &lt;ul class="pagination"&gt;
+    &lt;li class='disabled'&gt;
+      &lt;a href="#" aria-label="Previous"&gt;
+        &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class='active'&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#" aria-label="Next"&gt;
+        &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
   &lt;/ul&gt;
+&lt;/nav&gt; 
+</code></pre>
+
+        <!-- bootstrap jumbotron -->
+        <h4>Bootstrap Progress Bar</h4>
+        <h5>_bootstrap_progress_bar</h5>
+<pre class='language-markup'><code>
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"&gt;
+    &lt;span class="sr-only"&gt;45% Complete&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+        <!-- bootstrap jumbotron -->
+        <h4>Bootstrap Tabs</h4>
+        <h5>_bootstrap_tabs</h5>
+<pre class='language-markup'><code>
+&lt;div role="tabpanel"&gt;
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class="nav nav-tabs" role="tablist"&gt;
+    &lt;li role="presentation" class="active"&gt;&lt;a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab"&gt;Tab One&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab"&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab"&gt;Tab Three&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#tab-four" aria-controls="tab-four" role="tab" data-toggle="tab"&gt;Tab Four&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;!-- Tab panes --&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div role="tabpanel" class="tab-pane active" id="tab-one"&gt;Tab One Content&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="tab-two"&gt;Tab Two Content&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="tab-three"&gt;Tab Three Content&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="tab-four"&gt;Tab Four Content&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 
