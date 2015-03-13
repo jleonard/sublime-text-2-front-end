@@ -1,0 +1,57 @@
+<snippet>
+  <content><![CDATA[
+
+/*
+ * Name specifies the keyframe animation to apply
+ */ 
+-webkit-animation-name : ${1:keyframes};
+        animation-name : ${1:keyframes};
+
+/*
+ * Duration specifies the length of time it
+ * takes to complete a single animation cycle.
+ * Options are seconds or milliseconds (ex. 1.5s or 1500ms)
+ */     
+-webkit-animation-duration : ${2:0.5s};
+        animation-duration : ${2:0.5s};
+
+/*
+ * The number of times an animation cycle will repeat before stopping.
+ * Options are positive whole numbers, decimals and infinite.
+ */
+-webkit-animation-iteration-count : ${3:1};
+        animation-iteration-count : ${3:1};
+
+/*
+ * The delay before the animation starts.
+ * Options are seconds or milliseconds (ex. 1.5s or 1500ms)
+ */
+-webkit-animation-delay : ${4:1.5s};
+        animation-delay : ${4:1.5s};
+
+/*
+ * Direction indicates whether the animation should play 
+ * in reverse on alternate cycles.
+ * Options are normal, reverse, alternate, alternate-reverse
+ */
+-webkit-animation-direction : ${5:reverse};
+        animation-direction : ${5:reverse};
+
+/*
+ * The timing function defines the style of progression
+ * Options are documented here https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function
+ */
+-webkit-animation-timing-function : ${6:linear};
+        animation-timing-function : ${6:linear};
+
+/*
+ * Plays or pauses an animation
+ * Options are running or paused
+ */
+-webkit-animation-play-state : ${7:running};
+        animation-play-state : ${7:running};
+
+
+]]></content>
+  <tabTrigger>_animation</tabTrigger>
+</snippet>
