@@ -3,7 +3,7 @@
 transition-property: ${1:all};
 transition-duration: ${2:750ms};
 transition-timing-function: ${3:ease-in};
-transition-delay: ${4:5000ms};
+transition-delay: ${4:500ms};
 ]]></content>
   <tabTrigger>_transition</tabTrigger>
 </snippet>
