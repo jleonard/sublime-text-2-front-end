@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+
+-webkit-animation-name : ${1:keyframes};
+-webkit-animation-duration : ${2:0.5s};
+-webkit-animation-iteration-count : ${3:1};
+-webkit-animation-delay : ${4:1.5s};
+-webkit-animation-direction : ${5:reverse};
+-webkit-animation-timing-function : ${6:linear};
+-webkit-animation-play-state : ${7:running};
+]]></content>
+  <tabTrigger>_animation_short</tabTrigger>
+</snippet>
